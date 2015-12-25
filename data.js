@@ -26,7 +26,12 @@ var source = [{
 }];
 
 var urls = {
-  "googlematerialicons": "//google.github.io/material-design-icons/",
+  // "googlematerialicons": "//google.github.io/material-design-icons/",
+  // "googlematerialicons2": "https://design.google.com/icons/",
+  "googlematerialicons": {
+    "home": "https://design.google.com/icons/",
+    "ghpage": "https://google.github.io/material-design-icons/"
+  },
   "ligature": "//alistapart.com/article/the-era-of-symbol-fonts",
   "fontclock": "//timepiece.inostudio.de/",
   "fontforge": "//fontforge.github.io/",
@@ -40,4 +45,11 @@ var urls = {
   "kangax.jsquiz": "http://perfectionkills.com/javascript-quiz/",
   "kangax.es6quiz": "http://perfectionkills.com/javascript-quiz-es6/"
 
+}
+
+var github = {
+  "leftstick": {
+    "home": "",
+    "page": ""
+  }
 }
