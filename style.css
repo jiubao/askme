@@ -1,4 +1,4 @@
-* {padding: 0; margin: 0;}
+* {padding: 0; margin: 0;box-sizing: border-box;}
 
 body {text-align: center; padding-top: 200px;}
 
@@ -13,9 +13,11 @@ h1 span:nth-child(4) {color: #777; }
 h1 span:nth-child(5) {color: #666; }
 
 input {
-	width: 50%; height: 37px;
+	width: 550px; height: 37px;
 	font: 17px arial, sans-serif;
 	border: solid 1px #d9d9d9;
+  /*
+  */
 	padding: 0 10px;
 }
 
@@ -23,6 +25,24 @@ input:focus {
 	border: solid 1px #4d90fe;
 	border: solid 1px #999;
 	outline: none;
+}
+
+.complete {
+  width: 550px; height: 500px;
+  border: solid 1px #ccc;
+  display: inline-block;
+}
+
+
+@media (max-width: 600px) {
+  input {
+    width: 90%;
+  }
+
+  .complete {
+    width: 90%;
+  }
+
 }
 
 
@@ -33,3 +53,4 @@ h1 {text-align: center;}
 .test {
 	font-family: STXihei, Adobe Song Std, STXinwei, Arial,Calibri,Centaur,Century Gothic,Chiller,DaunPenh
 }
+
