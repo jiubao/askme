@@ -1,9 +1,14 @@
 $(document).ready(function() {
-  var $input = $('#input');
-  var $inputContainer = $('.input');
-  $input.on('focus', function() {
-    $inputContainer.addClass('inputFocus');
+  var $sinput = $('#sinput');
+  var $sinputContainer = $('.sinput');
+  var $sbox = $('#sbox');
+  var $dbox = $('#dbox');
+  $sinput.on('focus', function() {
+    $sinputContainer.addClass('inputFocus');
   }).on('blur', function() {
-    $inputContainer.removeClass('inputFocus');
+    $sinputContainer.removeClass('inputFocus');
+  }).on('keydown', function() {
+    $sbox.css('display', 'none');
+    $dbox.css('display', 'block');
   });
 });
