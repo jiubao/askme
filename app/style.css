@@ -37,6 +37,10 @@ input:focus {
 	outline: none;
 }
 
+.inputFocus {
+  border: solid 1px #aaa;
+}
+
 .complete {
   height: 500px;
   border: solid 1px #ccc;
