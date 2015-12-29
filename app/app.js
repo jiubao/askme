@@ -20,7 +20,7 @@ $define('input', ['index', function(engine) {
       var ch = String.fromCharCode(keyevent.keyCode);
       var text = (this.value + '' + ch).trim().toLowerCase();
       if (text == '') return;
-      var index = engine.index.get(text);
+      var index = engine.search(text);
       g(index);
     });
 
@@ -32,3 +32,24 @@ $define('input', ['index', function(engine) {
 
 $define('list', function() {});
 
+$define('statistic', function() {
+  var tpl = $('#tpl-statistic').html();
+  tpl = decodeEntities(tpl);
+  var dom = $('#statistic');
+
+  return {
+    render: function(index, seconds) {
+      var result = index ? html(index.datas.length, seconds) : '';
+      dom.html(result);
+    }
+  };
+
+  function html(count, seconds) {
+    return ejs.render(tpl, new stat(count, seconds));
+  }
+
+  function stat(c, sec) {
+    this.count = c;
+    this.seconds = sec;
+  }
+});

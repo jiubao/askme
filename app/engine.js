@@ -17,7 +17,18 @@ $define('index', ['data', function(data) {
     })
   });
 
-  return {index: indexes};
+  return {
+    index: indexes,
+    search: function(txt) {
+      var d1 = Date.now();
+      var ind = indexes.get(txt);
+      var seconds = Date.now() - d1;
+      this.$share.modules.forEach(function(module) {
+        isFunction(module.render) && module.render(ind, seconds);
+      });
+      return ind;
+    }
+  };
 
   function index01(key) {
     this.key = key;
