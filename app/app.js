@@ -1,34 +1,21 @@
-$define('simple', ['detail', function(detail) {
-  var $sinput = $('#sinput');
-  var $sinputContainer = $('.sinput');
-  var $sbox = $('#sbox');
+$define('input', function() {
+  var $input = $('#input');
+  var $inputbox = $('.input-box');
+  var $container = $('#inputContainer');
 
   init();
   return {};
 
   function init() {
-    $sinput.on('focus', function() {
-      $sinputContainer.addClass('inputFocus');
+    $input.on('focus', function() {
+      $inputbox.addClass('input-focus');
     }).on('blur', function() {
-      $sinputContainer.removeClass('inputFocus');
+      $inputbox.removeClass('input-focus');
     }).on('keydown', function() {
-      hide();
-      detail.show();
+      $container.attr('class', 'detail');
     });
   }
 
-  function hide() {
-    $sbox.css('display', 'none');
-  }
-}]);
-
-$define('detail', function() {
-  var $dbox = $('#dbox');
-  return {
-    show: function() {
-      $dbox.css('display', 'block');
-    }
-  };
 });
 
 

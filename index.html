@@ -6,24 +6,12 @@
 </head>
 <body>
 
-<div id="sbox">
-  <h1 class="brand">
-  	<span>A</span><span>s</span><span>k</span> <span>M</span><span>e</span>
+<div id="inputContainer" class="simple">
+  <h1>
+    <span>A</span><span>s</span><span>k</span> <span>M</span><span>e</span>
   </h1>
-
-  <div class="sinput">
-    <input id="sinput" type="text" />
-  </div>
-</div>
-
-<div id="dbox">
-  <div class="header">
-    <h2 class="brand">
-      <span>A</span><span>s</span><span>k</span> <span>M</span><span>e</span>
-    </h2>
-    <div class="dinput">
-      <input id="dinput" type="text" />
-    </div>
+  <div class="input-box">
+    <input id="input" type="text" />
   </div>
 </div>
 
@@ -36,7 +24,7 @@
 <script type="text/javascript" src="app/app.js"></script>
 <script type="text/javascript" src="app/engine.js"></script>
 <script type="text/javascript">
-  $define('enter', ['simple', 'index', function(s, i) {
+  $define('enter', ['input', 'index', function(s, i) {
     console.log("app running");
     console.log(i.index);
   }]);
