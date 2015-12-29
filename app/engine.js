@@ -4,16 +4,16 @@ $define('index', ['data', function(data) {
     var keys = item.keys.split(',');
     keys.forEach(function(key) {
       key = key.trim();
-      key.split('').forEach(function(ch) {
-        if (!indexes.exist(ch)) {
-          indexes.add(ch, new index01(ch));
+      // key.split('').forEach(function(ch) {
+      //   addIndex(ch, key, item);
+      // });
+
+      var len = key.length
+      for (var i = 1; i <= len; i++) {
+        for (var j = 0, jj = len - i; j <= jj; j++) {
+          addIndex(key.slice(j, j+i), key, item);
         }
-
-        var index = indexes.get(ch);
-        index.keys.includes(key) || index.keys.push(key);
-        index.urls.includes(item.url) || index.urls.push(item.url);
-
-      });
+      }
     })
   });
 
@@ -24,39 +24,18 @@ $define('index', ['data', function(data) {
     this.keys = [];
     this.urls = [];
   }
+
+  function addIndex(ch, key, item) {
+    if (!indexes.exist(ch)) {
+      indexes.add(ch, new index01(ch));
+    }
+
+    var index = indexes.get(ch);
+    index.keys.includes(key) || index.keys.push(key);
+    index.urls.includes(item.url) || index.urls.push(item.url);
+
+  }
+
 }]);
 
 
-
-function dictionary() {}
-
-dictionary.prototype = {
-    get: function(key) {
-        return this[key];
-    },
-    add: function(key, value) {
-        this[key] = value;
-        return this;
-    },
-    exist: function(key) {
-        return !isUndefined(this[key]);
-    },
-    array: function() {
-        var keys = Object.keys(this);
-        return keys.map(function(key) {
-            return this[key];
-        });
-    },
-    iterate: function(fn) {
-        for(var key in this) {
-            if (this.hasOwnProperty(key)) {
-                fn.call(null, this[key], key, this);
-            }
-        }
-    }
-    // remove: function(key) {
-    //     var value = this[key];
-    //     delete this[key];
-    //     return value;
-    // }
-};
