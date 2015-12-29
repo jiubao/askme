@@ -1,10 +1,3 @@
-var $injector = window.$j = window.$injector = createInjector();
-var $define = $injector.define;
-
-$define('enter', ['simple', function() {
-  console.log("app running");
-}]);
-
 $define('simple', ['detail', function(detail) {
   var $sinput = $('#sinput');
   var $sinputContainer = $('.sinput');
@@ -40,6 +33,3 @@ $define('detail', function() {
 
 
 
-$(document).ready(function() {
-  $injector.get('enter');
-});

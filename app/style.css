@@ -86,7 +86,7 @@ input:focus {
 
 
 @media (max-width: 600px) {
-  .box {
+  .sinput {
     width: 90%;
   }
 }

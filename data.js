@@ -1,44 +1,17 @@
-var source = [{
-  name: "fontforge",
-  keys: "icon font, font, icon, ligature",
-  desc: "ligature",
-  urls: [urls.ligature, urls.googlematerialicons, urls.fontclock, urls.fontforge, urls.materializecss]
-}, {
-  name: "highlight",
-  keys: "highlight, syntax, code, pre",
-  desc: "hightlight code",
-  urls: [urls.prismjs, urls.highlightjs]
-}, {
-  name: "jstemplate",
-  keys: "template",
-  desc: "js template",
-  urls: [urls.ejs]
-}, {
-  name: "aframe",
-  keys: "vr, 3d",
-  desc: "mozilla open source vr framework for web dev",
-  urls: [urls.aframe]
-}, {
-  name: "jsquiz",
-  keys: "quiz, js",
-  desc: "",
-  urls: [urls["kangax.jsquiz"], urls["kangax.es6quiz"], urls["leftstick.jsquiz"]]
-}];
+$define('data', function() {
+
+
+
 
 var urls = {
   // "googlematerialicons": "//google.github.io/material-design-icons/",
   // "googlematerialicons2": "https://design.google.com/icons/",
-  "googlematerialicons": {
-    "home": "https://design.google.com/icons/",
-    "ghpage": "https://google.github.io/material-design-icons/"
-  },
   "ligature": "//alistapart.com/article/the-era-of-symbol-fonts",
   "fontclock": "//timepiece.inostudio.de/",
   "fontforge": "//fontforge.github.io/",
   "designwithfontforge": "//designwithfontforge.com/en-US/index.html",
   "prismjs": "//prismjs.com/",
   "highlightjs": "//highlightjs.org/",
-  "ejs": "//github.com/tj/ejs",
   "materializecss": "//materializecss.com/",
   "aframe": "//aframe.io/",
   "leftstick.jsquiz": "http://leftstick.github.io/quiz-legend/",
@@ -51,5 +24,65 @@ var github = {
   "leftstick": {
     "home": "",
     "page": ""
+  },
+  "tj": {
+    "ejs": "https://github.com/tj/ejs"
   }
-}
+};
+
+var google = {
+  "googlematerialicons": {
+    "home": "https://design.google.com/icons/",
+    "ghpage": "https://google.github.io/material-design-icons/"
+  }
+};
+
+var mdn = {};
+
+var data = [
+   { url: urls["ligature"], keys: "font, icon, ligature", desc: "a"
+}, { url: urls["fontclock"], keys: "font, icon, ligature", desc: "b"
+}, { url: urls["fontforge"], keys: "font, icon, ligature", desc: "c"
+}, { url: google.googlematerialicons.home, keys: "font, icon, ligature", desc: "c"
+}, { url: google.googlematerialicons.ghpage, keys: "font, icon, ligature", desc: "c"
+}, { url: urls["designwithfontforge"], keys: "font, icon, ligature", desc: "d"
+}, { url: urls["prismjs"], keys: "highlight, syntax, code, pre", desc: "e"
+}, { url: urls["highlightjs"], keys: "highlight, syntax, code, pre", desc: "f"
+}, { url: urls["materializecss"], keys: "font, icon, ligature", desc: "g"
+}, { url: urls["aframe"], keys: "vr, 3d", desc: "g"
+}, { url: urls["kangax.jsquiz"], keys: "quiz", desc: "g"
+}, { url: urls["kangax.es6quiz"], keys: "quiz", desc: "g"
+}, { url: github.tj.ejs, keys: "template", desc: "g"
+}];
+
+
+  
+  return data;
+});
+
+// var source = [{
+//   name: "fontforge",
+//   keys: "icon font, font, icon, ligature",
+//   desc: "ligature",
+//   urls: [urls.ligature, urls.googlematerialicons, urls.fontclock, urls.fontforge, urls.materializecss]
+// }, {
+//   name: "highlight",
+//   keys: "highlight, syntax, code, pre",
+//   desc: "hightlight code",
+//   urls: [urls.prismjs, urls.highlightjs]
+// }, {
+//   name: "jstemplate",
+//   keys: "template",
+//   desc: "js template",
+//   urls: [urls.ejs]
+// }, {
+//   name: "aframe",
+//   keys: "vr, 3d",
+//   desc: "mozilla open source vr framework for web dev",
+//   urls: [urls.aframe]
+// }, {
+//   name: "jsquiz",
+//   keys: "quiz, js",
+//   desc: "",
+//   urls: [urls["kangax.jsquiz"], urls["kangax.es6quiz"], urls["leftstick.jsquiz"]]
+// }];

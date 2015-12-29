@@ -32,7 +32,19 @@
 <script type="text/javascript" src="lib/common.js"></script>
 <script type="text/javascript" src="lib/jqlite.js"></script>
 <script type="text/javascript" src="lib/injector.js"></script>
+<script type="text/javascript" src="data.js"></script>
 <script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/engine.js"></script>
+<script type="text/javascript">
+  $define('enter', ['simple', 'index', function(s, i) {
+    console.log("app running");
+    console.log(i.index);
+  }]);
+
+  $(document).ready(function() {
+    $injector.get('enter');
+  });
+</script>
 
 </body>
 </html>
