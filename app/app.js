@@ -11,9 +11,14 @@ $define('input', function() {
       $inputbox.addClass('input-focus');
     }).on('blur', function() {
       $inputbox.removeClass('input-focus');
-    }).on('keydown', function() {
-      $container.attr('class', 'detail');
+    }).on('keydown', function(keyevent) {
+      var code = keyevent.keyCode;
+      if (code >= 48 && code <= 57 || code >= 65 && code <= 90) {
+        $container.attr('class', 'detail');
+      }
     });
+
+    $input[0].focus();
   }
 
 });
