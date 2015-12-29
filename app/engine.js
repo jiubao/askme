@@ -22,6 +22,7 @@ $define('index', ['data', function(data) {
   function index01(key) {
     this.key = key;
     this.keys = [];
+    this.datas = [];
     this.urls = [];
   }
 
@@ -32,7 +33,10 @@ $define('index', ['data', function(data) {
 
     var index = indexes.get(ch);
     index.keys.includes(key) || index.keys.push(key);
-    index.urls.includes(item.url) || index.urls.push(item.url);
+    if (!index.urls.includes(item.url)) {
+      index.urls.push(item.url);
+      index.datas.push(item);
+    }
 
   }
 
