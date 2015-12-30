@@ -12,3 +12,11 @@ next:
 
 2. put ref lib on page
 3. ...
+
+
+1. join index for multi-keys input
+2. beautify name/description, fulfill data source
+3. beautify list
+4. autocomplete keys
+5. includes issue (support browsers)
+6. mobile support
