@@ -12,17 +12,23 @@ $define('input', ['index', function(engine) {
       $inputbox.addClass('input-focus');
     }).on('blur', function() {
       $inputbox.removeClass('input-focus');
-    }).on('keydown', function(keyevent) {
+    }).one('keydown', function(keyevent) {
+      // g('keydown');
       var code = keyevent.keyCode;
       if (code >= 48 && code <= 57 || code >= 65 && code <= 90) {
         $container.attr('class', 'detail');
       }
     }).on('keydown', function(keyevent) {
-      var ch = String.fromCharCode(keyevent.keyCode);
-      var text = (this.value + '' + ch).trim().toLowerCase();
-      if (text == '') return;
-      var index = engine.search(text);
-      g(index);
+      // g('keypress');
+      // todo: separate to keypress(chars) & keydown(back/delete)
+      var key = event.keyCode;
+      if (key === 91 || (15 < key && key < 19) || (37 <= key && key <= 40)) return;
+      var self = this;
+      setTimeout(function() {
+        if (isUndefined(self.value)) return;
+        var text = self.value.toLowerCase();
+        text === '' || engine.search(text);
+      }, 1);
       return false;
       //to do: try to prevent event pop
     });
@@ -44,7 +50,17 @@ $define('input', ['index', function(engine) {
 }]);
 
 
-$define('list', function() {});
+$define('list', function() {
+  var tpl = $('#tpl-list').html();
+  tpl = decodeEntities(tpl);
+  var dom = $('#list');
+  return {
+    render: function(index) {
+      var html = index ? ejs.render(tpl, {results: index.datas}) : '';
+      dom.html(html);
+    }
+  };
+});
 
 $define('statistic', function() {
   var tpl = $('#tpl-statistic').html();

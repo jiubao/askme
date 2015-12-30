@@ -17,50 +17,33 @@
 
 <div id="statistic"></div>
 
+<div id="list"></div>
+
 
 <div class="templates">
-<div id="tpl-statistic">
-  <div><%=count%> results, <%=seconds%> microseconds</div>
-</div>
-
-<div id="tpl-list">
-
-<div id="list">
-  <div>
-    <h2>name</h2>
-    <div class="body">
-      <div>url</div>
-      <div>description</div>
-    </div>
+  <div id="tpl-statistic">
+    <div><%=count%> results, <%=seconds%> microseconds</div>
   </div>
 
-  <div>
-    <h2>name</h2>
-    <div class="body">
-      <div>url</div>
-      <div>description</div>
-    </div>
-  </div>
-  
-  <div>
-    <h2>name</h2>
-    <div class="body">
-      <div>url</div>
-      <div>description</div>
-    </div>
-  </div>
-  
-  <div>
-    <h2>name</h2>
-    <div class="body">
-      <div>url</div>
-      <div>description</div>
-    </div>
-  </div>
+  <div id="tpl-list">
+    <% results.forEach(function(result) { %>
 
-</div>
+      <div>
+        <h2><%=result.name%></h2>
+        <div class="body">
+          <div><%=result.url%></div>
+          <div><%=result.desc%></div>
+        </div>
+        <div class="foot">
+          <%result.keyArray.forEach(function(key){%>
+            <span><%=key%></span>
+            <%})%>
+        </div>
+      </div>
 
-</div>
+    <% }) %>
+
+  </div>
 
 </div>
 
@@ -73,7 +56,7 @@
 <script type="text/javascript" src="app/app.js"></script>
 <script type="text/javascript" src="app/engine.js"></script>
 <script type="text/javascript">
-  $define('enter', ['input', 'index', 'statistic', function(s, i, stat) {
+  $define('enter', ['input', 'index', 'list', 'statistic', function(s, i, stat) {
     console.log("app running");
     console.log(i.index);
   }]);
@@ -85,3 +68,34 @@
 
 </body>
 </html>
+
+
+<!--
+
+      <div>
+        <h2>name</h2>
+        <div class="body">
+          <div>url</div>
+          <div>description</div>
+        </div>
+      </div>
+      
+      <div>
+        <h2>name</h2>
+        <div class="body">
+          <div>url</div>
+          <div>description</div>
+        </div>
+      </div>
+      
+      <div>
+        <h2>name</h2>
+        <div class="body">
+          <div>url</div>
+          <div>description</div>
+        </div>
+      </div>
+
+
+
+-->

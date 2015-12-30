@@ -2,8 +2,11 @@ $define('index', ['data', function(data) {
   var indexes = new dictionary();
   data.forEach(function(item) {
     var keys = item.keys.split(',');
+    keys = trimStringArray(keys);
+    item.keyArray = keys;
+
     keys.forEach(function(key) {
-      key = key.trim();
+      // key = key.trim();
       // key.split('').forEach(function(ch) {
       //   addIndex(ch, key, item);
       // });
@@ -43,12 +46,23 @@ $define('index', ['data', function(data) {
     }
 
     var index = indexes.get(ch);
+
+    // todo: replace includes
     index.keys.includes(key) || index.keys.push(key);
     if (!index.urls.includes(item.url)) {
       index.urls.push(item.url);
       index.datas.push(item);
     }
 
+  }
+
+  function trimStringArray(arr) {
+    if (!isArray(arr)) return;
+    return arr.map(function(item) {
+      var val = item.trim();
+      if (val !== '')
+        return val;
+    });
   }
 
 }]);
