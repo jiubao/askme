@@ -2,6 +2,7 @@ $define('input', ['index', function(engine) {
   var $input = $('#input');
   var $inputbox = $('.input-box');
   var $container = $('#inputContainer');
+  var $document = $(document);
 
   init();
   return {};
@@ -22,8 +23,21 @@ $define('input', ['index', function(engine) {
       if (text == '') return;
       var index = engine.search(text);
       g(index);
+      return false;
+      //to do: try to prevent event pop
     });
 
+    $document.on('keydown', function(keyevent) {
+      if (keyevent.keyCode === 27) {
+        focus();
+      }
+
+    });
+
+    focus();
+  }
+
+  function focus() {
     $input[0].focus();
   }
 
