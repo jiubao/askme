@@ -18,5 +18,7 @@ next:
 2. beautify name/description, fulfill data source
 3. beautify list
 4. autocomplete keys
-5. includes issue (support browsers)
+5. array.includes issue (support browsers)
 6. mobile support
+7. quick js search
+8. ...
