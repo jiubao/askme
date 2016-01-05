@@ -1,12 +1,15 @@
 # askme
-frontend question? try ask me.
+=======
+
+Frontend question? Try ask me.
 
 a search page, for front end issues
 
-next:
+next
+----
 1. separate search engine:
-	a. runtime index
-	b. pre index
+	* runtime index
+	* pre index
 
 	different engine have different theme
 
