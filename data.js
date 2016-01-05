@@ -19,7 +19,7 @@ var urls = {
   "kangax.es6quiz": "http://perfectionkills.com/javascript-quiz-es6/",
   "markdown": "http://daringfireball.net/projects/markdown/",
   "markdownOnline": "http://daringfireball.net/projects/markdown/dingus/",
-
+  "ci": "https://travis-ci.org/"
 }
 
 var github = {
@@ -72,6 +72,7 @@ var data = [
 }, { url: github.gh.flavoredMarkdown, keys: "markdown flavored github", desc: "g", name:"a"
 }, { url: urls["markdown"], keys: "markdown", desc: "g", name:"a"
 }, { url: urls["markdownOnline"], keys: "markdown online", desc: "g", name:"a"
+}, { url: urls["ci"], keys: "continuous integration ci", desc: "g", name:"a"
 }];
 
 
