@@ -1,9 +1,7 @@
 # askme
 =======
-
 Frontend question? Try ask me.
-
-a search page, for front end issues
+  a search page, for front end issues
 
 coming
 ------
