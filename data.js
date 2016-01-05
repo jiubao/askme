@@ -16,7 +16,9 @@ var urls = {
   "aframe": "//aframe.io/",
   "leftstick.jsquiz": "http://leftstick.github.io/quiz-legend/",
   "kangax.jsquiz": "http://perfectionkills.com/javascript-quiz/",
-  "kangax.es6quiz": "http://perfectionkills.com/javascript-quiz-es6/"
+  "kangax.es6quiz": "http://perfectionkills.com/javascript-quiz-es6/",
+  "markdown": "http://daringfireball.net/projects/markdown/",
+  "markdownOnline": "http://daringfireball.net/projects/markdown/dingus/",
 
 }
 
@@ -27,6 +29,11 @@ var github = {
   },
   "tj": {
     "ejs": "https://github.com/tj/ejs"
+  },
+  "gh": {
+    "masterMarkdown": "https://guides.github.com/features/mastering-markdown/",
+    "writingInGithub": "https://help.github.com/articles/writing-on-github/",
+    "flavoredMarkdown": "https://help.github.com/articles/github-flavored-markdown/"
   }
 };
 
@@ -60,6 +67,11 @@ var data = [
 }, { url: urls["kangax.jsquiz"], keys: "quiz", desc: "g", name:"a"
 }, { url: urls["kangax.es6quiz"], keys: "quiz", desc: "g", name:"a"
 }, { url: github.tj.ejs, keys: "template", desc: "g", name:"a"
+}, { url: github.gh.masterMarkdown, keys: "markdown master github", desc: "g", name:"a"
+}, { url: github.gh.writingInGithub, keys: "markdown write writing github", desc: "g", name:"a"
+}, { url: github.gh.flavoredMarkdown, keys: "markdown flavored github", desc: "g", name:"a"
+}, { url: urls["markdown"], keys: "markdown", desc: "g", name:"a"
+}, { url: urls["markdownOnline"], keys: "markdown online", desc: "g", name:"a"
 }];
 
 
