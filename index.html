@@ -28,10 +28,10 @@
   <div id="tpl-list">
     <% results.forEach(function(result) { %>
 
-      <div>
-        <h2><%=result.name%></h2>
+      <div class="sect">
+        <h3><a href="<%=result.url%>"><%=result.name%></a></h3>
         <div class="body">
-          <div><%=result.url%></div>
+          <div class="url"><%=result.url%></div>
           <div><%=result.desc%></div>
         </div>
         <div class="foot">

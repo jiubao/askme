@@ -55,6 +55,33 @@ input:focus {
   position: absolute; left: 130px;
 }
 
+#statistic, #list {
+  font-family: arial, sans-serif; font-size: 13px;
+  margin: 15px 120px 23px 120px;
+}
+
+#statistic {
+  color: #808080;
+}
+
+#list {
+  color: #545454;
+}
+
+.sect {
+  margin-bottom: 23px;
+}
+
+#list .url {
+  color: #006621; font-size: 14px;
+}
+
+#list h3 {font-size: 18px;}
+
+#list a {
+  text-decoration: none; font-weight: normal;
+}
+
 
 @media (max-width: 700px) {
   .detail .input-box {
