@@ -66,14 +66,23 @@ input:focus {
 
 #list {
   color: #545454;
+  margin-bottom: 100px;
 }
 
 .sect {
   margin-bottom: 23px;
 }
 
+.sect .foot {
+  color: #808080;
+}
+
 #list .url {
   color: #006621; font-size: 14px;
+}
+
+#list .desc {
+  margin: 3px 0;
 }
 
 #list h3 {font-size: 18px;}

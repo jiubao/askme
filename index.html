@@ -19,7 +19,6 @@
 
 <div id="list"></div>
 
-
 <div class="templates">
   <div id="tpl-statistic">
     <div><%=count%> results, <%=seconds%> microseconds</div>
@@ -32,7 +31,7 @@
         <h3><a href="<%=result.url%>"><%=result.name%></a></h3>
         <div class="body">
           <div class="url"><%=result.url%></div>
-          <div><%=result.desc%></div>
+          <div class="desc"><%=result.desc%></div>
         </div>
         <div class="foot">
           <%result.keyArray.forEach(function(key){%>
