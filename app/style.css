@@ -73,8 +73,8 @@ input:focus {
   margin-bottom: 23px;
 }
 
-.sect .foot {
-  color: #808080;
+.sect .foot span {
+  background-color: #eee; padding: 0 2px;
 }
 
 #list .url {
