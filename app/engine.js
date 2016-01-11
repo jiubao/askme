@@ -21,16 +21,7 @@ $define('index', ['data', function(data) {
   });
 
   return {
-    index: indexes,
-    search: function(txt) {
-      var d1 = Date.now();
-      var ind = indexes.get(txt);
-      var seconds = Date.now() - d1;
-      this.$share.modules.forEach(function(module) {
-        isFunction(module.render) && module.render(ind, seconds);
-      });
-      return ind;
-    }
+    indexes: indexes
   };
 
   function index01(key) {
@@ -67,4 +58,24 @@ $define('index', ['data', function(data) {
 
 }]);
 
+$define('search', ['index', function(index) {
+  return {
+    search: function(txt) {
+      var d1 = Date.now();
+      var ind = index.indexes.get(txt);
+      var seconds = Date.now() - d1;
+      this.$share.modules.forEach(function(module) {
+        isFunction(module.render) && module.render(ind, seconds);
+      });
+      return ind;
+    }
+  };
 
+  function parse(txt) {
+    return [txt];
+  }
+
+  function merge(arr) {
+    return arr;
+  }
+}]);

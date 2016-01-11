@@ -1,4 +1,4 @@
-$define('input', ['index', function(engine) {
+$define('input', ['search', function(search) {
   var $input = $('#input');
   var $inputbox = $('.input-box');
   var $container = $('#inputContainer');
@@ -27,7 +27,7 @@ $define('input', ['index', function(engine) {
       setTimeout(function() {
         if (isUndefined(self.value)) return;
         var text = self.value.toLowerCase();
-        text === '' || engine.search(text);
+        text === '' || search.search(text);
       }, 1);
       return false;
       //to do: try to prevent event pop
