@@ -88,9 +88,8 @@ input:focus {
 #list h3 {font-size: 18px;}
 
 #list a {
-  text-decoration: none; font-weight: normal;
+  text-decoration: none; font-weight: normal; color: #444;
 }
-
 
 @media (max-width: 700px) {
   .detail .input-box {
