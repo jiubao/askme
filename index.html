@@ -14,7 +14,7 @@
     <input id="input" type="text" />
   </div>
 </div>
-
+<div id="auto-complete"></div>
 <div id="statistic"></div>
 
 <div id="list"></div>
@@ -44,6 +44,16 @@
 
   </div>
 
+  <div id="tpl-auto-complete">
+    <div class="auto-complete">
+    <%if(results.length>0){%>
+    Related links:
+    <%results.forEach(function(index){%>
+      <span><%=index%></span>
+    <%})}%>
+    </div>
+  </div>
+
 </div>
 
 <script type="text/javascript" src="lib/minerr.js"></script>
@@ -55,7 +65,7 @@
 <script type="text/javascript" src="app/app.js"></script>
 <script type="text/javascript" src="app/engine.js"></script>
 <script type="text/javascript">
-  $define('enter', ['input', 'index', 'list', 'statistic', function(s, i, stat) {
+  $define('enter', ['input', 'index', 'list', 'statistic','autoComplete', function(s, i, stat) {
     console.log("app running");
     console.log(i.index);
   }]);
