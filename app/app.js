@@ -83,3 +83,21 @@ $define('statistic', function() {
     this.seconds = sec;
   }
 });
+
+$define('autoComplete',['search',function(search){
+  var tpl = $('#tpl-auto-complete').html();
+  tpl = decodeEntities(tpl);
+  var dom = $('#auto-complete');
+  return{
+    render:function(index){
+      var html = index? ejs.render(tpl,{results:index.keys}):'';
+      dom.html(html);
+      $this = $(document.querySelectorAll('.auto-complete span'));
+      $this.on('click',function(){
+        var text = this.innerHTML;
+        $('#input').val(text);
+        search.search(text);
+      });
+    }
+  };
+}]);
