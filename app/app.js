@@ -88,7 +88,7 @@ $define('autoComplete',['search',function(search){
   var tpl = $('#tpl-auto-complete').html();
   tpl = decodeEntities(tpl);
   var dom = $('#auto-complete');
-  return{
+  return {
     render:function(index){
       var html = index? ejs.render(tpl,{results:index.keys}):'';
       dom.html(html);
