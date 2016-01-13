@@ -54,8 +54,20 @@ input:focus {
 .detail .input-box {
   position: absolute; left: 130px;
 }
-
-#statistic, #list {
+.auto-complete{
+  font-family: arial, sans-serif; font-size: 13px;
+  margin:20px;
+  height:17px;
+  overflow: hidden;
+}
+.auto-complete span{
+  display:inline-block;
+  margin-right: 10px;
+  color:#2759a4;
+  cursor: pointer;
+  text-decoration:underline;
+}
+#statistic, #list{
   font-family: arial, sans-serif; font-size: 13px;
   margin: 15px 120px 23px 120px;
 }
