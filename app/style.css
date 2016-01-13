@@ -35,7 +35,7 @@ input:focus {
   border: solid 1px #aaa;
 }
 
-.simple {
+.simple #inputContainer {
   text-align: center; padding-top: 200px;
 }
 
@@ -43,7 +43,7 @@ input:focus {
   display: inline-block;
 }
 
-.detail {
+.detail #inputContainer {
   background-color: #f1f1f1;
   border-bottom: 1px solid #666;
   border-color: #e5e5e5;
@@ -54,17 +54,33 @@ input:focus {
 .detail .input-box {
   position: absolute; left: 130px;
 }
-.auto-complete{
+.simple #auto-complete {
+  display: none;
+}
+.detail #auto-complete {
+  display: block;
+}
+#auto-complete{
+  /*
   font-family: arial, sans-serif; font-size: 13px;
   margin:20px;
   height:17px;
   overflow: hidden;
+  */
+
+  border-bottom: solid 1px #DE7;
+  padding: 5px 20px 5px 7px;
+  background: #f9f9f9;
+  font-family: arial, sans-serif;
+  font-size: 13px;
 }
-.auto-complete span{
+#auto-complete span{
   display:inline-block;
   margin-right: 10px;
   color:#2759a4;
   cursor: pointer;
+}
+#auto-complete span:hover{
   text-decoration:underline;
 }
 #statistic, #list{

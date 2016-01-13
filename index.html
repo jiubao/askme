@@ -4,9 +4,9 @@
 	<title>ASK ME</title>
 	<link rel="stylesheet" type="text/css" href="app/style.css">
 </head>
-<body>
+<body class="simple">
 
-<div id="inputContainer" class="simple">
+<div id="inputContainer">
   <h1>
     <span>A</span><span>s</span><span>k</span> <span>M</span><span>e</span>
   </h1>
@@ -45,13 +45,11 @@
   </div>
 
   <div id="tpl-auto-complete">
-    <div class="auto-complete">
     <%if(results.length>0){%>
     Related links:
     <%results.forEach(function(index){%>
       <span><%=index%></span>
     <%})}%>
-    </div>
   </div>
 
 </div>

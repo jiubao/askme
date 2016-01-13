@@ -2,6 +2,7 @@ $define('input', ['search', function(search) {
   var $input = $('#input');
   var $inputbox = $('.input-box');
   var $container = $('#inputContainer');
+  var $body = $('body');
   var $document = $(document);
 
   init();
@@ -16,7 +17,7 @@ $define('input', ['search', function(search) {
       // g('keydown');
       var code = keyevent.keyCode;
       if (code >= 48 && code <= 57 || code >= 65 && code <= 90) {
-        $container.attr('class', 'detail');
+        $body.attr('class', 'detail');
       }
     }).on('keydown', function(keyevent) {
       // g('keypress');
