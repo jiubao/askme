@@ -56,6 +56,21 @@ $define('index', ['data', function(data) {
     });
   }
 
+  var next = 0;
+  function nextId() {
+    return next++;
+  }
+
+  function pre() {
+    return data.map(function(item) {
+      var id = nextId();
+      item.id = id;
+      var obj = createMap();
+      obj[id] = item;
+      return obj;
+    });
+  }
+
 }]);
 
 $define('search', ['index', function(index) {
