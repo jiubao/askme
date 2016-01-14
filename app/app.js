@@ -14,11 +14,7 @@ $define('input', ['search', function(search) {
     }).on('blur', function() {
       $inputbox.removeClass('input-focus');
     }).one('keydown', function(keyevent) {
-      // g('keydown');
-      var code = keyevent.keyCode;
-      if (code >= 48 && code <= 57 || code >= 65 && code <= 90) {
-        $body.attr('class', 'detail');
-      }
+      todetail(keyevent);
     }).on('keydown', function(keyevent) {
       // g('keypress');
       // todo: separate to keypress(chars) & keydown(back/delete)
@@ -42,6 +38,20 @@ $define('input', ['search', function(search) {
     });
 
     focus();
+
+    function todetail(keyevent) {
+      // g('keydown');
+      var key = keyevent.keyCode;
+      if (key === 91 || (15 < key && key < 19) || (37 <= key && key <= 40)) {
+        $input.one('keydown', function(keyevent) {
+          todetail(keyevent);
+        });
+        return;
+      }
+      // if (code >= 48 && code <= 57 || code >= 65 && code <= 90) {
+      $body.attr('class', 'detail');
+      // }
+    }
   }
 
   function focus() {
