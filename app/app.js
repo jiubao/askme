@@ -22,7 +22,7 @@ $define('input', ['search', function(search) {
     }).on('keydown', function(keyevent) {
       // g('keypress');
       // todo: separate to keypress(chars) & keydown(back/delete)
-      var key = event.keyCode;
+      var key = keyevent.keyCode;
       if (key === 91 || (15 < key && key < 19) || (37 <= key && key <= 40)) return;
       var self = this;
       setTimeout(function() {
@@ -93,7 +93,7 @@ $define('autoComplete',['search',function(search){
     render:function(index){
       var html = index? ejs.render(tpl,{results:index.keys}):'';
       dom.html(html);
-      $this = $(document.querySelectorAll('.auto-complete span'));
+      $this = $(document.querySelectorAll('.auto-complete a'));
       $this.on('click',function(){
         var text = this.innerHTML;
         $('#input').val(text);
@@ -102,3 +102,5 @@ $define('autoComplete',['search',function(search){
     }
   };
 }]);
+
+
