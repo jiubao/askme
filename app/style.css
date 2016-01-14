@@ -144,3 +144,15 @@ a:visited {color: #777;}
 
 */
 
+#logconsole {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 500px; */
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 9999;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    font-family: arial;
+    font-size: 13px;
+}
