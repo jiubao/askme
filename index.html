@@ -46,10 +46,12 @@
 
   <div id="tpl-auto-complete">
     <%if(results.length>0){%>
-    Related links:
-    <%results.forEach(function(index){%>
-      <span><%=index%></span>
-    <%})}%>
+    <div class="auto-complete">
+      <%results.forEach(function(index){%>
+        <span><%=index%></span>
+      <%});%>
+    </div>
+    <%}%>
   </div>
 
 </div>
