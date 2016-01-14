@@ -24,6 +24,14 @@ input:focus {
   outline: none;
 }
 
+a {text-decoration: none; font-weight: normal; color: #440;}
+a:hover {text-decoration: underline;}
+a:visited {color: #777;}
+
+.auto-complete a {color: #777; padding-right: 7px;}
+.auto-complete a:hover {color: #222; text-decoration: none;}
+
+
 .input-box {
   width: 550px; height: 40px;
   border: solid 1px #d9d9d9; padding: 5px 9px 0 9px;
@@ -61,27 +69,11 @@ input:focus {
   display: block;
 }
 .auto-complete{
-  /*
-  font-family: arial, sans-serif; font-size: 13px;
-  margin:20px;
-  height:17px;
-  overflow: hidden;
-  */
-
   border-bottom: solid 1px #e8e8e8;
   padding: 5px 20px;
   background: #f9f9f9;
   font-family: arial, sans-serif;
   font-size: 13px;
-}
-.auto-complete span{
-  display:inline-block;
-  margin-right: 10px;
-  color:#2759a4;
-  cursor: pointer;
-}
-.auto-complete span:hover{
-  text-decoration:underline;
 }
 #statistic, #list{
   font-family: arial, sans-serif; font-size: 13px;
@@ -114,13 +106,6 @@ input:focus {
 }
 
 #list h3 {font-size: 18px;}
-
-a {
-  text-decoration: none; font-weight: normal; color: #440;
-}
-
-a:hover {text-decoration: underline;}
-a:visited {color: #777;}
 
 @media (max-width: 700px) {
   .detail .input-box {
