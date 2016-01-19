@@ -19,7 +19,8 @@ var urls = {
   "kangax.es6quiz": "http://perfectionkills.com/javascript-quiz-es6/",
   "markdown": "http://daringfireball.net/projects/markdown/",
   "markdownOnline": "http://daringfireball.net/projects/markdown/dingus/",
-  "ci": "https://travis-ci.org/"
+  "ci": "https://travis-ci.org/",
+  "expressOverHttps": "http://blog.mgechev.com/2014/02/19/create-https-tls-ssl-application-with-express-nodejs/"
 }
 
 var github = {
@@ -47,6 +48,15 @@ var google = {
     "home": "https://design.google.com/icons/",
     "ghpage": "https://google.github.io/material-design-icons/"
   }
+};
+
+var mac = {
+  "brew": "http://brew.sh/",
+  "ohmz": "http://ohmyz.sh/",
+  "iterm2": "https://www.iterm2.com/",
+  "keyboard": "https://github.com/thefloweringash/iousbhiddriver-descriptor-override",
+  "sublshortcut": "http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html",
+  "hosts": "http://www.inmotionhosting.com/support/website/how-to/how-to-edit-your-hosts-file-on-a-mac"
 };
 
 var mdn = {};
@@ -81,6 +91,13 @@ var data = [
 }, { url: urls["ci"], keys: "continuous, integration, ci", name:"Travis CI - Test and Deploy Your Code with Confidence", desc: "Easily sync your GitHub projects with Travis CI and you'll be testing your code in minutes!"
 }, { url: github.angular["gh"], keys: "angular, mvvm, mvw, js, javascript", name:"AngularJS - GitHub", desc: "AngularJS lets you write client-side web applications as if you had a smarter browser. It lets you use good old HTML (or HAML, Jade and friends!) as your template language and lets you extend HTML’s syntax to express your application’s components clearly and succinctly. It automatically synchronizes data from your UI (view) with your JavaScript objects (model) through 2-way data binding. To help you structure your application better and make it easy to test, AngularJS teaches the browser how to do dependency injection and inversion of control."
 }, { url: github.angular["home"], keys: "angular, mvvm, mvw, js, javascript", name:"AngularJS - Superheroic JavaScript MVW Framework", desc: "AngularJS is what HTML would have been, had it been designed for building web-apps. Declarative templates with data-binding, MVW, MVVM, MVC, dependency injection and great testability story all implemented with pure client-side JavaScript!"
+}, { url: mac["brew"], keys: "mac, brew, install, start", name:"Homebrew - The missing package manager for OS X", desc: "The missing package manager for OS X"
+}, { url: mac["ohmz"], keys: "mac, ohmz, console, terminal, start", name:"Oh My Zsh", desc: "Oh-My-Zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout... OH MY ZSH!"
+}, { url: mac["iterm2"], keys: "mac, iterm, console, terminal, start", name:"iTerm2 - Mac OS Terminal Replacement", desc: "iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted."
+}, { url: mac["keyboard"], keys: "mac, keyboard, start", name:"IOUSBHIDDriverDescriptorOverride", desc: "This OS X kernel extension provides a method for overriding a HID descriptor and ignoring the descriptor provided by the device. This is useful when the HID descriptor returned by a HID device is invalid or incorrect."
+}, { url: urls["expressOverHttps"], keys: "https, expess", name:"Express over HTTPS", desc: "Sometimes you want to test your application in environment closer to the real world. In such cases you might need to run it over TLS."
+}, { url: mac["sublshortcut"], keys: "sublime, subl, shortcut, mac", name:"Sublime Keyboard Shortcuts - OSX", desc: "Sublime Keyboard Shortcuts for OSX"
+}, { url: mac["hosts"], keys: "mac, hosts, start", name:"How to edit your hosts file on a mac", desc: "Like many Unix-based and Unix-like operating systems, it is possible to change the hosts file on your Mac to manually set a domain to a certain server."
 }];
 
 

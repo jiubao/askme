@@ -26,7 +26,9 @@ input:focus {
 
 a {text-decoration: none; font-weight: normal; color: #440;}
 a:hover {text-decoration: underline;}
+/*
 a:visited {color: #777;}
+*/
 
 .auto-complete a {color: #777; padding-right: 7px;}
 .auto-complete a:hover {color: #222; text-decoration: none;}
