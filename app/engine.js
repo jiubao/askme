@@ -65,12 +65,13 @@ $define('index', ['data', function(data) {
 
     // todo: replace includes
     index.keys.includes(key) || index.keys.push(key);
-    if (!index.urls.includes(item.url)) {
+    index.map[item.id] = true;
+    if (item.code) {
+      // index.codes = item.code;
+    } else if (item.url && !index.urls.includes(item.url)) {
       index.urls.push(item.url);
       // index.datas.push(item);
-      index.map[item.id] = true;
     }
-
   }
 
   function mapData(keymap) {

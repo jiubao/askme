@@ -3,6 +3,7 @@
 <head>
 	<title>ASK ME</title>
 	<link rel="stylesheet" type="text/css" href="app/style.css">
+  <meta charset="UTF-8">
 </head>
 <body class="simple">
 
@@ -43,10 +44,26 @@
     <% results.forEach(function(result) { %>
 
       <div class="sect">
-        <h3><a href="<%=result.url%>"><%=result.name%></a></h3>
+        <h3>
+          <% if (result.url) { %>
+          <a href="<%=result.url%>">
+          <% } else { %>
+          <a>
+          <% } %>
+          <%=result.name%></a>
+        </h3>
         <div class="body">
+          <% if (result.url) { %>
           <div class="url"><%=result.url%></div>
+          <% } %>
+          <% if (result.desc) { %>
           <div class="desc"><%=result.desc%></div>
+          <% } %>
+          <% if (result.code) { %>
+          <pre>
+<code><%=result.code%></code>
+          </pre>
+          <% } %>
         </div>
         <div class="foot">
           <%result.keyArray.forEach(function(key){%>
