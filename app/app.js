@@ -67,10 +67,20 @@ $define('list', function() {
   var dom = $('#list');
   return {
     render: function(index) {
-      var html = index ? ejs.render(tpl, {results: index.datas}) : '';
+      var html = index ? ejs.render(tpl, {results: pre(index.datas)}) : '';
       dom.html(html);
     }
   };
+
+  function pre(datas) {
+    datas.forEach(function(data) {
+      if (data.codeId) {
+        var $code = $(document.querySelectorAll('#' + data.codeId));
+        data.code = $code.html();
+      }
+    });
+    return datas;
+  }
 });
 
 $define('statistic', function() {
@@ -112,5 +122,3 @@ $define('autoComplete',['search',function(search){
     }
   };
 }]);
-
-

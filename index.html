@@ -35,6 +35,17 @@
 
 <div id="list"></div>
 
+<div class="codes">
+  <textarea id="taobaonpm">
+// temp use
+npm --registry https://registry.npm.taobao.org install express
+// permanent use
+npm config set registry https://registry.npm.taobao.org
+// loglevel
+npm config set loglevel=http
+  </textarea>
+</div>
+
 <div class="templates">
   <div id="tpl-statistic">
     <div><%=count%> results, <%=seconds%> microseconds</div>
@@ -123,7 +134,7 @@
           <div>description</div>
         </div>
       </div>
-      
+
       <div>
         <h2>name</h2>
         <div class="body">
@@ -131,7 +142,7 @@
           <div>description</div>
         </div>
       </div>
-      
+
       <div>
         <h2>name</h2>
         <div class="body">

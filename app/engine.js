@@ -22,7 +22,10 @@ $define('index', ['data', function(data) {
 
   return {
     indexes: indexes,
-    search: search
+    search: search,
+    byId: function(id) {
+      return dataMap[id];
+    }
     // joinData: innerjoinData,
     // joinKey: outerjoinKey
   };
