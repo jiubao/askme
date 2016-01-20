@@ -7,20 +7,7 @@
 </head>
 <body class="simple">
 
-<div id="logconsole" style="display: none;">
-  aaa<br/>
-  asf;lkasjdf;alsjd;flajsd;lfja;sldaaa<br/>
-  aaaasd;klfj;asldfj;<br/>
-  aaaa;sdkjf;alskdjf<br/>
-  aaaasd;klfj;asldfj;<br/>
-  aaaa;sdkjf;alskdjf<br/>
-  aaa<br/>
-  aaaasd;klfj;asldfj;<br/>
-  aaaa;sdkjf;alskdjf<br/>
-  aaa<br/>
-  aaa<br/>
-
-</div>
+<div id="logconsole"></div>
 
 <div id="inputContainer">
   <h1>
@@ -50,6 +37,11 @@ npm config set loglevel=http
   <div id="tpl-statistic">
     <div><%=count%> results, <%=seconds%> microseconds</div>
   </div>
+
+	<div id="tpl-log">
+		<%=element%> <br/>
+		<%=event%> <br/>
+	</div>
 
   <div id="tpl-list">
     <% results.forEach(function(result) { %>

@@ -122,3 +122,16 @@ $define('autoComplete',['search',function(search){
     }
   };
 }]);
+
+$define('log', function() {
+  if (!$.log) return;
+  var $logpanel = $('#logconsole');
+  var tpl = decodeEntities($('#tpl-log').html());
+  $.log.addFactory('page', function(element, event) {
+    var html = ejs.render(tpl, {element: element, event: event});
+    $logpanel.append(html);
+  });
+  $.log.set(['page', 'console']);
+  $logpanel.css('display', 'block');
+  return {};
+});
