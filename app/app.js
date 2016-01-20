@@ -75,7 +75,7 @@ $define('list', function() {
   function pre(datas) {
     datas.forEach(function(data) {
       if (data.codeId) {
-        var $code = $(document.querySelectorAll('#' + data.codeId));
+        var $code = $('#' + data.codeId);
         data.code = $code.html();
       }
     });
@@ -113,7 +113,7 @@ $define('autoComplete',['search',function(search){
     render:function(index){
       var html = index? ejs.render(tpl,{results:index.keys}):'';
       dom.html(html);
-      $this = $(document.querySelectorAll('.auto-complete a'));
+      $this = $('.auto-complete a');
       $this.on('click',function(){
         var text = this.innerHTML;
         $('#input').val(text);
