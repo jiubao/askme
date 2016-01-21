@@ -107,6 +107,7 @@ a:visited {color: #777;}
 
 #list .url {
   color: #006621; font-size: 14px;
+  text-overflow: ellipsis; overflow: hidden;
 }
 
 #list .desc {
@@ -115,15 +116,28 @@ a:visited {color: #777;}
 
 #list h3 {font-size: 18px;}
 
+pre { overflow: scroll; }
+
 @media (max-width: 768px) {
 /*@media (max-width: 700px) {*/
+
+  body.detail { background-color: #f4f4f4; }
+
   .detail .input-box {
     width: initial;
     right: 8px;
   }
 
-  #statistic, #list {
-    margin-left: 8px; margin-right: 8px;
+  #statistic, #list { margin-left: 8px; margin-right: 8px; margin-top: 10px;  }
+
+  #statistic { margin-bottom: 10px; }
+
+  .sect {
+    padding: 12px 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    margin: 0 0 10px 0;
   }
 }
 
@@ -145,6 +159,20 @@ a:visited {color: #777;}
   .detail .input-box {
     left: 8px;
   }
+
+  .detail #inputContainer {
+    background-color: #f4f4f4; border: 0; height: inherit;
+  }
+
+  .detail #auto-complete {display: none;}
+
+  .detail h1 { float: none; }
+
+  .detail .input-box {
+    margin: 0 8px; position: static;
+  }
+
+  #statistic {padding-left:4px;}
 }
 
 .templates, .codes {display: none;}
