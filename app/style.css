@@ -1,8 +1,14 @@
 * {padding: 0; margin: 0;box-sizing: border-box;}
 
+/*
 h1 {font-family: daunpenh; font-weight: normal; cursor: pointer;}
 .simple h1 {font-size: 70px;}
 .detail h1 {font-size: 40px; padding: 0 20px; float: left;}
+*/
+
+h1 {font-family: serif; font-weight: normal; cursor: pointer;}
+.simple h1 {font-size: 60px; margin-bottom: 25px;}
+.detail h1 {font-size: 32px; padding: 0 20px; float: left; line-height: 40px;}
 
 h1 span:nth-child(1) {color: #555; }
 h1 span:nth-child(2) {color: #666; }
