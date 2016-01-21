@@ -67,11 +67,13 @@ $define('index', ['data', function(data) {
     var index = indexes.get(ch);
 
     // todo: replace includes
-    index.keys.includes(key) || index.keys.push(key);
+    // index.keys.includes(key) || index.keys.push(key);
+    includes(index.keys, key) || index.keys.push(key);
     index.map[item.id] = true;
     if (item.code) {
       // index.codes = item.code;
-    } else if (item.url && !index.urls.includes(item.url)) {
+    // } else if (item.url && !index.urls.includes(item.url)) {
+    } else if (item.url && !includes(index.urls, item.url)) {
       index.urls.push(item.url);
       // index.datas.push(item);
     }
@@ -106,7 +108,8 @@ $define('index', ['data', function(data) {
     });
 
     right.forEach(function(key){
-      if (!result.includes(key))
+      // if (!result.includes(key))
+      if (!includes(result, key))
         result.push(key);
     });
 
