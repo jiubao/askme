@@ -128,10 +128,38 @@ $define('log', function() {
   var $logpanel = $('#logconsole');
   var tpl = decodeEntities($('#tpl-log').html());
   $.log.addFactory('page', function(element, event) {
-    var html = ejs.render(tpl, {element: element, event: event});
+    var obj = {
+      element: element.nodeName,
+      event: event.type
+    };
+    var html = ejs.render(tpl, obj);
     $logpanel.append(html);
   });
-  $.log.set(['page', 'console']);
-  $logpanel.css('display', 'block');
+  // $.log.set(['page', 'console']);
+
+  $('#spanA').on('click', function() {
+    $logpanel.css('display', 'none');
+    $.log.set(['console']);
+  });
+
+  $('#spanS').on('click', function() {
+    $logpanel.css('display', 'block');
+    $.log.set(['page']);
+  });
+
+  $('#spanK').on('click', function() {
+    $logpanel.css('display', 'block');
+    $.log.set(['page', 'console']);
+  });
+
+  $('#spanM').on('click', function() {
+    $logpanel.css('display', 'none');
+    $.log.set([]);
+  });
+
+  $('#spanE').on('click', function() {
+    $logpanel.css('display', 'none');
+    $.log.set([]);
+  });
   return {};
 });

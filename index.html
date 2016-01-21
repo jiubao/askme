@@ -11,7 +11,7 @@
 
 <div id="inputContainer">
   <h1>
-    <span>A</span><span>s</span><span>k</span> <span>M</span><span>e</span>
+    <span id="spanA">A</span><span id="spanS">s</span><span id="spanK">k</span> <span id="spanM">M</span><span id="spanE">e</span>
   </h1>
   <div class="input-box">
     <input id="input" type="text" />
@@ -39,8 +39,7 @@ npm config set loglevel=http
   </div>
 
 	<div id="tpl-log">
-		<%=element%> <br/>
-		<%=event%> <br/>
+		<%=element%>, <%=event%> <br/>
 	</div>
 
   <div id="tpl-list">
@@ -103,7 +102,7 @@ npm config set loglevel=http
 <script type="text/javascript" src="app/app.js"></script>
 <script type="text/javascript" src="app/engine.js"></script>
 <script type="text/javascript">
-  $define('enter', ['input', 'index', 'list', 'statistic','autoComplete', function(s, i, stat) {
+  $define('enter', ['input', 'index', 'list', 'statistic','autoComplete', 'log', function(s, i, stat) {
     console.log("app running");
     // console.log(i.index);
   }]);
