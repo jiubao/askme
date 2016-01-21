@@ -22,7 +22,8 @@ var urls = {
   "ci": "https://travis-ci.org/",
   "expressOverHttps": "http://blog.mgechev.com/2014/02/19/create-https-tls-ssl-application-with-express-nodejs/",
   "npmtaobao1": "http://riny.net/2014/cnpm/",
-  "taobaonpm": "http://npm.taobao.org/"
+  "taobaonpm": "http://npm.taobao.org/",
+  "codyhouse": "https://codyhouse.co/"
 }
 
 var github = {
@@ -114,6 +115,7 @@ var data = [
 }, { code: codes.taobaonpm, codeId: 'taobaonpm', keys: "npm, taobao, mirror, code", name:"淘宝 NPM 镜像"
 }, { url: urls["npmtaobao1"], keys: "npm, taobao, mirror", name:"国内优秀npm镜像推荐及使用 - Bubblings Blog", desc: "npm全称Node Package Manager，是node.js的模块依赖管理工具。由于npm的源在国外，所以国内用户使用起来各种不方便。下面整理出了一部分国内优秀的npm镜像资源，国内用户可以选择使用。", code: ""
 }, { url: urls["taobaonpm"], keys: "npm, taobao, mirror", name:"淘宝 NPM 镜像", desc: "这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。"
+}, { url: urls["codyhouse"], keys: "html, css, js", name:"CodyHouse - Free HTML, CSS, JS nuggets", desc: "A free library of HTML/CSS/Javascript resources to boost your web projects and learn new tricks."
 }];
 
 
