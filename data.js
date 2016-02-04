@@ -23,16 +23,21 @@ var urls = {
   "expressOverHttps": "http://blog.mgechev.com/2014/02/19/create-https-tls-ssl-application-with-express-nodejs/",
   "npmtaobao1": "http://riny.net/2014/cnpm/",
   "taobaonpm": "http://npm.taobao.org/",
-  "codyhouse": "https://codyhouse.co/"
+  "codyhouse": "https://codyhouse.co/",
+  "es6.pdf": "http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf",
+  "es6.html": "http://www.ecma-international.org/ecma-262/6.0/index.html",
+  "ExploringES6": "http://exploringjs.com/es6/"
 }
 
 var github = {
   "leftstick": {
     "home": "",
-    "page": ""
+    "page": "",
+    "generator": "http://leftstick.github.io/generator-fundamentals"
   },
   "tj": {
-    "ejs": "https://github.com/tj/ejs"
+    "ejs": "https://github.com/tj/ejs",
+    "co": "https://github.com/tj/co"
   },
   "gh": {
     "masterMarkdown": "https://guides.github.com/features/mastering-markdown/",
@@ -43,7 +48,8 @@ var github = {
   "angular": {
     "gh": "https://github.com/angular/angular.js",
     "home": "https://angularjs.org/"
-  }
+  },
+  "thunks": "https://github.com/thunks/thunks"
 };
 
 var google = {
@@ -62,7 +68,9 @@ var mac = {
   "hosts": "http://www.inmotionhosting.com/support/website/how-to/how-to-edit-your-hosts-file-on-a-mac"
 };
 
-var mdn = {};
+var mdn = {
+  "destructure": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment"
+};
 
 var stackoverflow = {};
 
@@ -137,6 +145,13 @@ var data = [
 }, { url: onlineCoding.jsfiddle, keys: "coding, code, online, fiddle, javascript, editor, html, css", name:"Create a new fiddle - JSFiddle", desc: "Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor."
 }, { url: onlineCoding.es6fiddle, keys: "es6, coding, code, online, fiddle, javascript, editor, html, css", name:"ES6 Fiddle", desc: "ES6 Examples"
 }, { url: ecmascript.es6info1, keys: "coding, javascript, es6, start, 5min", name:"JavaScript — Just another introduction to ES6", desc: "In this post I am going to introduce you to some of these features used in ES6 Fiddle. I recommend you to play with them and get a feeling of what’s to come."
+}, { url: mdn.destructure, keys: "es6, destructure", name:"Destructuring assignment", desc: "The destructuring assignment syntax is a JavaScript expression that makes it possible to extract data from arrays or objects using a syntax that mirrors the construction of array and object literals."
+}, { url: github.leftstick.generator, keys: "es6, generator, leftstick", name:"generator slides", desc: "In computer science, a generator is a special routine that can be used to control the iteration behaviour of a loop. In fact, all generators are iterators."
+}, { url: github.tj.co, keys: "es6, generator, co, tj, promise, callback, hell, thunk", name:"co", desc: "Generator based control flow goodness for nodejs and the browser, using promises, letting you write non-blocking code in a nice-ish way."
+}, { url: github.thunks, keys: "thunk", name:"thunk, asynchronous", desc: "thunk is a function that encapsulates synchronous or asynchronous code inside."
+}, { url: urls["es6.pdf"], keys: "es6, spec, pdf, js", name:"Standard ECMA-262 6th Edition / June 2015", desc: "This Ecma Standard defines the ECMAScript 2015 Language. It is the sixth edition of the ECMAScript Language Specification. Since publication of the first edition in 1997, ECMAScript has grown to be one of the world’s most widely used general purpose programming languages. It is best known as the language embedded in web browsers but has also been widely adopted for server and embedded applications. The sixth edition is the most extensive update to ECMAScript since the publication of the first edition in 1997."
+}, { url: urls["es6.html"], keys: "es6, spec, html, js", name:"Standard ECMA-262 6th Edition / June 2015", desc: "This Ecma Standard defines the ECMAScript 2015 Language. It is the sixth edition of the ECMAScript Language Specification. Since publication of the first edition in 1997, ECMAScript has grown to be one of the world’s most widely used general purpose programming languages. It is best known as the language embedded in web browsers but has also been widely adopted for server and embedded applications. The sixth edition is the most extensive update to ECMAScript since the publication of the first edition in 1997."
+}, { url: urls["ExploringES6"], keys: "es6, tutorial, material, book, js", name:"Exploring ES6", desc: "This book is about ECMAScript 6 (whose official name is ECMAScript 2015), a new version of JavaScript."
 }];
 
 
