@@ -24,9 +24,7 @@ var urls = {
   "npmtaobao1": "http://riny.net/2014/cnpm/",
   "taobaonpm": "http://npm.taobao.org/",
   "codyhouse": "https://codyhouse.co/",
-  "es6.pdf": "http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf",
-  "es6.html": "http://www.ecma-international.org/ecma-262/6.0/index.html",
-  "ExploringES6": "http://exploringjs.com/es6/"
+  "diplove": "http://dpi.lv/"
 }
 
 var github = {
@@ -96,7 +94,13 @@ var onlineCoding = {
 };
 
 var ecmascript = {
-  es6info1: "https://medium.com/sons-of-javascript/javascript-an-introduction-to-es6-1819d0d89a0f#.509aqua3p"
+  "es6.pdf": "http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf",
+  "es6.html": "http://www.ecma-international.org/ecma-262/6.0/index.html",
+  "ExploringES6": "http://exploringjs.com/es6/",
+  es6info1: "https://medium.com/sons-of-javascript/javascript-an-introduction-to-es6-1819d0d89a0f#.509aqua3p",
+  "2ality": "http://www.2ality.com/",
+  "speakingjs": "http://speakingjs.com/es5/index.html",
+  "6tech2015": "http://www.2ality.com/2016/01/web-technologies-2015.html"
 };
 
 var reactiveProgramming = {
@@ -149,9 +153,13 @@ var data = [
 }, { url: github.leftstick.generator, keys: "es6, generator, leftstick", name:"generator slides", desc: "In computer science, a generator is a special routine that can be used to control the iteration behaviour of a loop. In fact, all generators are iterators."
 }, { url: github.tj.co, keys: "es6, generator, co, tj, promise, callback, hell, thunk", name:"co", desc: "Generator based control flow goodness for nodejs and the browser, using promises, letting you write non-blocking code in a nice-ish way."
 }, { url: github.thunks, keys: "thunk", name:"thunk, asynchronous", desc: "thunk is a function that encapsulates synchronous or asynchronous code inside."
-}, { url: urls["es6.pdf"], keys: "es6, spec, pdf, js", name:"Standard ECMA-262 6th Edition / June 2015", desc: "This Ecma Standard defines the ECMAScript 2015 Language. It is the sixth edition of the ECMAScript Language Specification. Since publication of the first edition in 1997, ECMAScript has grown to be one of the world’s most widely used general purpose programming languages. It is best known as the language embedded in web browsers but has also been widely adopted for server and embedded applications. The sixth edition is the most extensive update to ECMAScript since the publication of the first edition in 1997."
-}, { url: urls["es6.html"], keys: "es6, spec, html, js", name:"Standard ECMA-262 6th Edition / June 2015", desc: "This Ecma Standard defines the ECMAScript 2015 Language. It is the sixth edition of the ECMAScript Language Specification. Since publication of the first edition in 1997, ECMAScript has grown to be one of the world’s most widely used general purpose programming languages. It is best known as the language embedded in web browsers but has also been widely adopted for server and embedded applications. The sixth edition is the most extensive update to ECMAScript since the publication of the first edition in 1997."
-}, { url: urls["ExploringES6"], keys: "es6, tutorial, material, book, js", name:"Exploring ES6", desc: "This book is about ECMAScript 6 (whose official name is ECMAScript 2015), a new version of JavaScript."
+}, { url: ecmascript["es6.pdf"], keys: "es6, spec, pdf, js", name:"Standard ECMA-262 6th Edition / June 2015", desc: "This Ecma Standard defines the ECMAScript 2015 Language. It is the sixth edition of the ECMAScript Language Specification. Since publication of the first edition in 1997, ECMAScript has grown to be one of the world’s most widely used general purpose programming languages. It is best known as the language embedded in web browsers but has also been widely adopted for server and embedded applications. The sixth edition is the most extensive update to ECMAScript since the publication of the first edition in 1997."
+}, { url: ecmascript["es6.html"], keys: "es6, spec, html, js", name:"Standard ECMA-262 6th Edition / June 2015", desc: "This Ecma Standard defines the ECMAScript 2015 Language. It is the sixth edition of the ECMAScript Language Specification. Since publication of the first edition in 1997, ECMAScript has grown to be one of the world’s most widely used general purpose programming languages. It is best known as the language embedded in web browsers but has also been widely adopted for server and embedded applications. The sixth edition is the most extensive update to ECMAScript since the publication of the first edition in 1997."
+}, { url: ecmascript["ExploringES6"], keys: "es6, tutorial, material, book, js", name:"Exploring ES6", desc: "This book is about ECMAScript 6 (whose official name is ECMAScript 2015), a new version of JavaScript."
+}, { url: ecmascript["2ality"], keys: "es6, tutorial, material, book, js", name:"2ality - JavaScript and more", desc: "2ality is a blog about JavaScript, web development and mobile computing (but other topics are covered, too, occasionally). This blog was started in March 2005."
+}, { url: ecmascript["speakingjs"], keys: "es5, book, js", name:"Speaking JavaScript", desc: "This book has been written for programmers, by a programmer. So, in order to understand it, you should already know object-oriented programming, for example, via a mainstream programming language such as Java, PHP, C++, Python, Ruby, Objective-C, C#, or Perl."
+}, { url: ecmascript["6tech2015"], keys: "web, six, 6, technology, 2015, electron, rollup, react, native, vs, code", name:"Looking back on 2015: six exciting web technologies", desc: "In 2015, there was an amazing amount of innovation related to the web platform. The following sections describe six technologies that I find exciting: Electron, React Native, Progressive web apps, Visual studio code, Rollup, Web Assembly."
+}, { url: urls["diplove"], keys: "ppi, dpi, dppx, pixel, per, inch", name:"DPI love - Easily find the DPI/PPI of any screen", desc: "DPI love - Easily find the DPI/PPI of any screen"
 }];
 
 
