@@ -100,6 +100,7 @@ var ecmascript = {
   es6info1: "https://medium.com/sons-of-javascript/javascript-an-introduction-to-es6-1819d0d89a0f#.509aqua3p",
   "2ality": "http://www.2ality.com/",
   "speakingjs": "http://speakingjs.com/es5/index.html",
+  "es6modules": "http://www.2ality.com/2014/09/es6-modules-final.html",
   "6tech2015": "http://www.2ality.com/2016/01/web-technologies-2015.html"
 };
 
@@ -107,6 +108,11 @@ var reactiveProgramming = {
   "rp": "https://gist.github.com/staltz/868e7e9bc2a7b8c1f754",
   "rerxjs": "https://github.com/Reactive-Extensions/RxJS",
   "rxjs": "https://github.com/ReactiveX/RxJS"
+};
+
+var functionalProgramming = {
+  "scareFP": "https://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/",
+  "fpBasics": "https://pragprog.com/magazines/2013-01/functional-programming-basics"
 };
 
 var data = [
@@ -159,7 +165,10 @@ var data = [
 }, { url: ecmascript["2ality"], keys: "es6, tutorial, material, book, js", name:"2ality - JavaScript and more", desc: "2ality is a blog about JavaScript, web development and mobile computing (but other topics are covered, too, occasionally). This blog was started in March 2005."
 }, { url: ecmascript["speakingjs"], keys: "es5, book, js", name:"Speaking JavaScript", desc: "This book has been written for programmers, by a programmer. So, in order to understand it, you should already know object-oriented programming, for example, via a mainstream programming language such as Java, PHP, C++, Python, Ruby, Objective-C, C#, or Perl."
 }, { url: ecmascript["6tech2015"], keys: "web, six, 6, technology, 2015, electron, rollup, react, native, vs, code", name:"Looking back on 2015: six exciting web technologies", desc: "In 2015, there was an amazing amount of innovation related to the web platform. The following sections describe six technologies that I find exciting: Electron, React Native, Progressive web apps, Visual studio code, Rollup, Web Assembly."
+}, { url: ecmascript["es6modules"], keys: "es6, export, import, modules, tutorial, material, js", name:"ECMAScript 6 modules: the final syntax", desc: "At the end of July 2014, TC39 [1] had another meeting, during which the last details of the ECMAScript 6 (ES6) module syntax were finalized. This blog post gives an overview of the complete ES6 module system."
 }, { url: urls["diplove"], keys: "ppi, dpi, dppx, pixel, per, inch", name:"DPI love - Easily find the DPI/PPI of any screen", desc: "DPI love - Easily find the DPI/PPI of any screen"
+}, { url: functionalProgramming["scareFP"], keys: "functional, programming, fp", name:"Don’t Be Scared Of Functional Programming", desc: "Functional programming is the mustachioed hipster of programming paradigms. Originally relegated to the annals of computer science academia, functional programming has had a recent renaissance that is due largely to its utility in distributed systems (and probably also because “pure” functional languages like Haskell are difficult to grasp, which gives them a certain cachet)."
+}, { url: functionalProgramming["fpBasics"], keys: "functional, programming, fp", name: "Functional Programming Basics", desc:"Confused about functional programming? “Uncle Bob” Martin strips the paradigm down to its essentials, and explains why you can and must understand functional programming now."
 }];
 
 
