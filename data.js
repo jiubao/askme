@@ -115,6 +115,11 @@ var functionalProgramming = {
   "fpBasics": "https://pragprog.com/magazines/2013-01/functional-programming-basics"
 };
 
+var d3 = {
+  "D3Tutorials": "http://alignedleft.com/tutorials/d3",
+  "D3Tutorials.cn": "http://pkuwwt.gitcafe.io/d3-tutorial-cn/about.html"
+};
+
 var data = [
    { url: urls["ligature"], keys: "font, icon, ligature", name:"The Era of Symbol Fonts", desc: "Welcome to the third epoch in web performance optimization: symbol fonts. Everything from bullets and arrows to feed and social media icons can now be bundled into a single, tiny font file that can be cached and rendered at various sizes without needing multiple images or colors. This has the same caching and file size benefits as a CSS sprite, plus additional benefits we're only now realizing with high-resolution displays. Discover the advantages and explore the challenges you'll encounter when using a symbol font."
 }, { url: urls["fontclock"], keys: "font, icon, ligature", name:"Timepiece Rounded", desc: "An Opentype Font displaying Time as an analogue Clock"
@@ -169,6 +174,8 @@ var data = [
 }, { url: urls["diplove"], keys: "ppi, dpi, dppx, pixel, per, inch", name:"DPI love - Easily find the DPI/PPI of any screen", desc: "DPI love - Easily find the DPI/PPI of any screen"
 }, { url: functionalProgramming["scareFP"], keys: "functional, programming, fp", name:"Don’t Be Scared Of Functional Programming", desc: "Functional programming is the mustachioed hipster of programming paradigms. Originally relegated to the annals of computer science academia, functional programming has had a recent renaissance that is due largely to its utility in distributed systems (and probably also because “pure” functional languages like Haskell are difficult to grasp, which gives them a certain cachet)."
 }, { url: functionalProgramming["fpBasics"], keys: "functional, programming, fp", name: "Functional Programming Basics", desc:"Confused about functional programming? “Uncle Bob” Martin strips the paradigm down to its essentials, and explains why you can and must understand functional programming now."
+}, { url: d3["D3Tutorials"], keys: "d3, functional, programming, fp", name: "Interactive Data Visualization for the Web - An Introduction to Designing with D3", desc:"These tutorials evolved out of my own process of learning how to use D3. You already know that D3 is an extraordinary tool for mapping data within web pages, written by Mike Bostock. Many people, including myself, come to D3 with backgrounds in design, mapping, and data visualization, but not programming and computer science."
+}, { url: d3["D3Tutorials.cn"], keys: "d3, functional, programming, fp", name: "Interactive Data Visualization for the Web - An Introduction to Designing with D3", desc:"这些教程反映的是我自己学习使用D3的过程。你应该已在Mike Bostock的主页了解到D3是一个将数据映射到网页内容的强悍的工具。很多人，包括我自己，开始学习D3时都只有设计/绘图/数据可视化方面的背景，却并不擅长编程和计算机科学。"
 }];
 
 
