@@ -89,6 +89,7 @@ npm config set loglevel=http\
 };
 
 var onlineCoding = {
+  plunker: "http://plnkr.co/",
   jsfiddle: "https://jsfiddle.net/",
   es6fiddle: "http://www.es6fiddle.net/"
 };
@@ -120,8 +121,25 @@ var d3 = {
   "D3Tutorials.cn": "http://pkuwwt.gitcafe.io/d3-tutorial-cn/about.html"
 };
 
+var ng2 = {
+  ng2io: "https://angular.io",
+  ve: "http://blog.thoughtram.io/angular/2015/06/29/shadow-dom-strategies-in-angular2.html",
+  styleng2: "http://blog.thoughtram.io/angular/2015/06/25/styling-angular-2-components.html",
+  sd: "http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/",
+  ad: "http://blog.thoughtram.io/angular/2015/05/03/the-difference-between-annotations-and-decorators.html",
+  jsdecorator: "https://github.com/wycats/javascript-decorators",
+  di: "http://blog.thoughtram.io/angular/2015/05/18/dependency-injection-in-angular-2.html"
+}
+
 var data = [
    { url: urls["ligature"], keys: "font, icon, ligature", name:"The Era of Symbol Fonts", desc: "Welcome to the third epoch in web performance optimization: symbol fonts. Everything from bullets and arrows to feed and social media icons can now be bundled into a single, tiny font file that can be cached and rendered at various sizes without needing multiple images or colors. This has the same caching and file size benefits as a CSS sprite, plus additional benefits we're only now realizing with high-resolution displays. Discover the advantages and explore the challenges you'll encounter when using a symbol font."
+}, { url: ng2["ng2io"], keys: "angular2, ng2, home", name:"Angular2 - One framework. Mobile and desktop.", desc: "In Angular you display data by defining components. Data in your component classes is automatically available to display in your templates or control how they render as in the example below."
+}, { url: ng2["ve"], keys: "angular2, ng2, shadow, dom", name:"View Encapsulation in Angular 2", desc: "Angular2 shadow dom strategy."
+}, { url: ng2["styleng2"], keys: "angular2, ng2, style", name:"Styling Angular 2 components", desc: "Until now, we mostly talked about how to create simple components in Angular 2, like a zippy or a tabs component, and we also covered some isolated parts of the framework like the new dependency injection. In this article we are going to discuss another essential part when it comes to building components: Styling."
+}, { url: ng2["sd"], keys: "angular2, ng2, Shadow, Dom", name:"Shadow DOM 101", desc: "With Shadow DOM, elements can get a new kind of node associated with them. This new kind of node is called a shadow root. An element that has a shadow root associated with it is called a shadow host. The content of a shadow host isn’t rendered; the content of the shadow root is rendered instead."
+}, { url: ng2["ad"], keys: "angular2, ng2, annotations, decorators", name:"The difference between Annotations and Decorators", desc: "Last year, the Angular team announced it’s ECMAScript language extension AtScript, which adds types and annotations to the language in order to enable better tooling, debugging and overall development experience. Half a year later at ng-conf, the team announced that AtScript becomes TypeScript, which supports annotations and another feature called “decorators”."
+}, { url: ng2["jsdecorator"], keys: "angular2, ng2, javascript, decorators", name:"javascript-decorators", desc: "Decorators make it possible to annotate and modify classes and properties at design time. While ES5 object literals support arbitrary expressions in the value position, ES6 classes only support literal functions as values. Decorators restore the ability to run code at design time, while maintaining a declarative syntax."
+}, { url: ng2["di"], keys: "angular2, ng2, di, dependency, injection", name:"Dependency Injection in Angular 2", desc: "Dependency injection has always been one of Angular’s biggest features and selling points. It allows us to inject dependencies in different components across our applications, without needing to know, how those dependencies are created, or what dependencies they need themselves. However, it turns out that the current dependency injection system in Angular 1 has some problems that need to be solved in Angular 2, in order to build the next generation framework. In this article, we’re going to explore the new dependency injection system for future generations."
 }, { url: urls["fontclock"], keys: "font, icon, ligature", name:"Timepiece Rounded", desc: "An Opentype Font displaying Time as an analogue Clock"
 }, { url: urls["fontforge"], keys: "font, icon, ligature", name:"FontForge Open Source Font Editor", desc: "FontForge is free and open-source outline font editor."
 }, { url: google.googlematerialicons.home, keys: "font, icon, ligature", name:"Material icons - Google Design", desc: "Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects."
@@ -159,6 +177,7 @@ var data = [
 }, { url: reactiveProgramming.rxjs, keys: "reactive, programing, rp, frp, rx", name:"ReactiveX/RxJS", desc: "Reactive Extensions Library for JavaScript. This is a rewrite of Reactive-Extensions/RxJS and is intended to supersede it once this is ready. This rewrite is meant to have better performance, better modularity, better debuggable call stacks, while staying mostly backwards compatible, with some breaking changes that reduce the API surface."
 }, { url: onlineCoding.jsfiddle, keys: "coding, code, online, fiddle, javascript, editor, html, css", name:"Create a new fiddle - JSFiddle", desc: "Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor."
 }, { url: onlineCoding.es6fiddle, keys: "es6, coding, code, online, fiddle, javascript, editor, html, css", name:"ES6 Fiddle", desc: "ES6 Examples"
+}, { url: onlineCoding.plunker, keys: "plunker, coding, code, online, fiddle, javascript, editor, html, css", name:"Plunker - Helping developers make the web", desc: "Plunker is an online community for creating, collaborating on and sharing your web development ideas."
 }, { url: ecmascript.es6info1, keys: "coding, javascript, es6, start, 5min", name:"JavaScript — Just another introduction to ES6", desc: "In this post I am going to introduce you to some of these features used in ES6 Fiddle. I recommend you to play with them and get a feeling of what’s to come."
 }, { url: mdn.destructure, keys: "es6, destructure", name:"Destructuring assignment", desc: "The destructuring assignment syntax is a JavaScript expression that makes it possible to extract data from arrays or objects using a syntax that mirrors the construction of array and object literals."
 }, { url: github.leftstick.generator, keys: "es6, generator, leftstick", name:"generator slides", desc: "In computer science, a generator is a special routine that can be used to control the iteration behaviour of a loop. In fact, all generators are iterators."
