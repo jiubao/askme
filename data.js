@@ -129,7 +129,17 @@ var ng2 = {
   ad: "http://blog.thoughtram.io/angular/2015/05/03/the-difference-between-annotations-and-decorators.html",
   jsdecorator: "https://github.com/wycats/javascript-decorators",
   di: "http://blog.thoughtram.io/angular/2015/05/18/dependency-injection-in-angular-2.html"
-}
+};
+
+var fe = {
+  shadowdomSpec: "http://w3c.github.io/webcomponents/spec/shadow/",
+  shadowdom101: "http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/",
+  shadowdom201: "http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/",
+  shadowdom301: "http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-301/#toc-distributed-nodes",
+  // shadowdomVisualizer: "http://html5-demos.appspot.com/static/shadowdom-visualizer/index.html",
+  customElements: "http://www.html5rocks.com/en/tutorials/webcomponents/customelements/",
+  styleElements: "https://www.polymer-project.org/0.5/articles/styling-elements.html"
+};
 
 var data = [
    { url: urls["ligature"], keys: "font, icon, ligature", name:"The Era of Symbol Fonts", desc: "Welcome to the third epoch in web performance optimization: symbol fonts. Everything from bullets and arrows to feed and social media icons can now be bundled into a single, tiny font file that can be cached and rendered at various sizes without needing multiple images or colors. This has the same caching and file size benefits as a CSS sprite, plus additional benefits we're only now realizing with high-resolution displays. Discover the advantages and explore the challenges you'll encounter when using a symbol font."
@@ -195,6 +205,13 @@ var data = [
 }, { url: functionalProgramming["fpBasics"], keys: "functional, programming, fp", name: "Functional Programming Basics", desc:"Confused about functional programming? “Uncle Bob” Martin strips the paradigm down to its essentials, and explains why you can and must understand functional programming now."
 }, { url: d3["D3Tutorials"], keys: "d3, functional, programming, fp", name: "Interactive Data Visualization for the Web - An Introduction to Designing with D3", desc:"These tutorials evolved out of my own process of learning how to use D3. You already know that D3 is an extraordinary tool for mapping data within web pages, written by Mike Bostock. Many people, including myself, come to D3 with backgrounds in design, mapping, and data visualization, but not programming and computer science."
 }, { url: d3["D3Tutorials.cn"], keys: "d3, functional, programming, fp", name: "Interactive Data Visualization for the Web - An Introduction to Designing with D3", desc:"这些教程反映的是我自己学习使用D3的过程。你应该已在Mike Bostock的主页了解到D3是一个将数据映射到网页内容的强悍的工具。很多人，包括我自己，开始学习D3时都只有设计/绘图/数据可视化方面的背景，却并不擅长编程和计算机科学。"
+}, { url: fe.shadowdomSpec, keys: "shadow, dom, spec, web, component", name: "Shadow DOM - W3C Editor's Draft 08 February 2016", desc:"This specification describes a method of combining multiple DOM trees into one hierarchy and how these trees interact with each other within a document, thus enabling better composition of the DOM."
+}, { url: fe.shadowdom101, keys: "shadow, dom, web, component", name: "Shadow DOM 101", desc:"Shadow DOM addresses the DOM tree encapsulation problem. The four parts of Web Components are designed to work together, but you can also pick and choose which parts of Web Components to use. This tutorial shows you how to use Shadow DOM."
+}, { url: fe.shadowdom201, keys: "shadow, dom, web, component", name: "Shadow DOM 201 - CSS and Styling", desc:"This article discusses more of the amazing things you can do with Shadow DOM. It builds on the concepts discussed in Shadow DOM 101. If you're looking for an introduction, see that article."
+}, { url: fe.shadowdom301, keys: "shadow, dom, web, component", name: "Shadow DOM 301 - Advanced Concepts & DOM APIs", desc:"This article discusses more of the amazing things you can do with Shadow DOM! It builds on the concepts discussed in Shadow DOM 101 and Shadow DOM 201."
+//}, { url: fe.shadowdomVisualizer, keys: "shadow, dom, spec", name: "Shadow DOM 301 - Advanced Concepts & DOM APIs", desc:"This article discusses more of the amazing things you can do with Shadow DOM! It builds on the concepts discussed in Shadow DOM 101 and Shadow DOM 201."
+}, { url: fe.customElements, keys: "custom, elements, web, component, shadow, dom, template", name: "Custom Elements", desc:"Custom Elements allow web developers to define new types of HTML elements. The spec is one of several new API primitives landing under the Web Components umbrella, but it's quite possibly the most important. Web Components don't exist without the features unlocked by custom elements:"
+}, { url: fe.styleElements, keys: "style, elemnet, shadow, dom", name: "A Guide to Styling Elements", desc:"This article covers many of the new CSS rules, properties, and concepts for styling Custom Elements. While much of it is applicable to general Web Components, it specifically focuses on: 1. How to use these new CSS features with Polymer. 2. How Polymer’s polyfills shim certain behaviors."
 }];
 
 
