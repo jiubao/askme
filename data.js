@@ -151,9 +151,11 @@ var ts = {
 
 var annotation = {
   es7Decorator: "https://github.com/wycats/javascript-decorators",
+  es7MetadataProposal: "https://github.com/jonathandturner/decorators/blob/master/specs/metadata.md",
+  es7MetadataShim: "https://github.com/rbuckton/ReflectDecorators",
   tsDecorator: "http://blog.wolksoftware.com/decorators-reflection-javascript-typescript",
   tsDecoratorProposal: "http://rbuckton.github.io/ReflectDecorators/typescript.html",
-  tsDecoratorCodeAss: "http://codeyourass.com/typescript-decorators/"
+  tsDecoratorCodeAss: "http://codeyourass.com/typescript-decorators/",
 }
 
 var data = [
@@ -162,7 +164,9 @@ var data = [
 }, { url: ts.handbook, keys: "typescript, ts, handbook, api", name:"TypeScript Handbook", desc: "For programs to be useful, we need to be able to work with some of the simplest units of data: numbers, strings, structures, boolean values, and the like. In TypeScript, we support much the same types as you would expected in JavaScript, with a convenient enumeration type thrown in to help things along."
 }, { url: ts.play, keys: "typescript, ts, live, editor, play", name:"TypeScript Play", desc: "TypeScript live editor."
 }, { url: ts.spec, keys: "typescript, ts, language, specification", name:"TypeScript Language Specification", desc: "Microsoft is making this Specification available under the Open Web Foundation Final Specification Agreement Version 1.0 (\"OWF 1.0\") as of October 1, 2012. The OWF 1.0 is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0. TypeScript is a trademark of Microsoft Corporation."
-}, { url: annotation["es7Decorator"], keys: "es7, javascript, decorator", name:"javascript-decorators", desc: "Decorators make it possible to annotate and modify classes and properties at design time. While ES5 object literals support arbitrary expressions in the value position, ES6 classes only support literal functions as values. Decorators restore the ability to run code at design time, while maintaining a declarative syntax."
+}, { url: annotation["es7Decorator"], keys: "es7, javascript, decorator, proposal", name:"javascript-decorators", desc: "Decorators make it possible to annotate and modify classes and properties at design time. While ES5 object literals support arbitrary expressions in the value position, ES6 classes only support literal functions as values. Decorators restore the ability to run code at design time, while maintaining a declarative syntax."
+}, { url: annotation["es7MetadataProposal"], keys: "es7, javascript, decorator, metadata, proposal", name:"Annotations+Decorators TC39 proposal", desc: "Decorators add the ability to augment a class and its members as the class is defined, through a declarative syntax. Traceur attaches annotations to a static property on the class. Languages like C# (.NET), and Java support attributes or annotations that add metadata to types, along with a reflective API for reading metadata."
+}, { url: annotation["es7MetadataShim"], keys: "es7, javascript, decorator, metadata, shim, proposal", name:"Prototype for an ES7 Reflection API for Decorator Metadata", desc:"Proposal to add Decorators to ES7, along with a prototype for an ES7 Reflection API for Decorator Metadata"
 }, { url: annotation["tsDecorator"], keys: "typescript, ts, decorator", name:"Decorators & metadata reflection in TypeScript: From Novice to Expert (Part I)", desc: "An in-depth look to the TypeScript implementation of decorators and how they make possible new exciting JavaScript features like reflection or dependency injection."
 }, { url: annotation["tsDecoratorProposal"], keys: "typescript, ts, decorator, proposal", name:"Decorators Proposal - TypeScript", desc: "A decorator is an expression that is evaluated after a class has been defined, that can be used to annotate or modify the class in some fashion. This expression must evaluate to a function, which is executed by the runtime to apply the decoration."
 }, { url: annotation["tsDecoratorCodeAss"], keys: "typescript, ts, decorator, codeass", name:"Decorators in Typescript", desc: "Decorators adding really new good thing directly into Typescript. As proposal explains: Decorators annotate and modify classes and properties on design time. They are able to annotate class, property, method or its parameter."
