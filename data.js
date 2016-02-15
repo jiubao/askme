@@ -127,8 +127,9 @@ var ng2 = {
   styleng2: "http://blog.thoughtram.io/angular/2015/06/25/styling-angular-2-components.html",
   sd: "http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/",
   ad: "http://blog.thoughtram.io/angular/2015/05/03/the-difference-between-annotations-and-decorators.html",
-  jsdecorator: "https://github.com/wycats/javascript-decorators",
-  di: "http://blog.thoughtram.io/angular/2015/05/18/dependency-injection-in-angular-2.html"
+  di: "http://blog.thoughtram.io/angular/2015/05/18/dependency-injection-in-angular-2.html",
+  di12: "http://victorsavkin.com/post/126514197956/dependency-injection-in-angular-1-and-angular-2",
+  gitter: "https://gitter.im/angular/angular"
 };
 
 var fe = {
@@ -141,14 +142,37 @@ var fe = {
   styleElements: "https://www.polymer-project.org/0.5/articles/styling-elements.html"
 };
 
+var ts = {
+  typescript: "http://www.typescriptlang.org/",
+  handbook: "http://www.typescriptlang.org/Handbook",
+  play: "http://www.typescriptlang.org/Playground",
+  spec: "https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md"
+};
+
+var annotation = {
+  es7Decorator: "https://github.com/wycats/javascript-decorators",
+  tsDecorator: "http://blog.wolksoftware.com/decorators-reflection-javascript-typescript",
+  tsDecoratorProposal: "http://rbuckton.github.io/ReflectDecorators/typescript.html",
+  tsDecoratorCodeAss: "http://codeyourass.com/typescript-decorators/"
+}
+
 var data = [
    { url: urls["ligature"], keys: "font, icon, ligature", name:"The Era of Symbol Fonts", desc: "Welcome to the third epoch in web performance optimization: symbol fonts. Everything from bullets and arrows to feed and social media icons can now be bundled into a single, tiny font file that can be cached and rendered at various sizes without needing multiple images or colors. This has the same caching and file size benefits as a CSS sprite, plus additional benefits we're only now realizing with high-resolution displays. Discover the advantages and explore the challenges you'll encounter when using a symbol font."
+}, { url: ts.typescript, keys: "typescript, ts", name:"TypeScript", desc: "TypeScript lets you write JavaScript the way you really want to. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser. Any host. Any OS. Open Source."
+}, { url: ts.handbook, keys: "typescript, ts, handbook, api", name:"TypeScript Handbook", desc: "For programs to be useful, we need to be able to work with some of the simplest units of data: numbers, strings, structures, boolean values, and the like. In TypeScript, we support much the same types as you would expected in JavaScript, with a convenient enumeration type thrown in to help things along."
+}, { url: ts.play, keys: "typescript, ts, live, editor, play", name:"TypeScript Play", desc: "TypeScript live editor."
+}, { url: ts.spec, keys: "typescript, ts, language, specification", name:"TypeScript Language Specification", desc: "Microsoft is making this Specification available under the Open Web Foundation Final Specification Agreement Version 1.0 (\"OWF 1.0\") as of October 1, 2012. The OWF 1.0 is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0. TypeScript is a trademark of Microsoft Corporation."
+}, { url: annotation["es7Decorator"], keys: "es7, javascript, decorator", name:"javascript-decorators", desc: "Decorators make it possible to annotate and modify classes and properties at design time. While ES5 object literals support arbitrary expressions in the value position, ES6 classes only support literal functions as values. Decorators restore the ability to run code at design time, while maintaining a declarative syntax."
+}, { url: annotation["tsDecorator"], keys: "typescript, ts, decorator", name:"Decorators & metadata reflection in TypeScript: From Novice to Expert (Part I)", desc: "An in-depth look to the TypeScript implementation of decorators and how they make possible new exciting JavaScript features like reflection or dependency injection."
+}, { url: annotation["tsDecoratorProposal"], keys: "typescript, ts, decorator, proposal", name:"Decorators Proposal - TypeScript", desc: "A decorator is an expression that is evaluated after a class has been defined, that can be used to annotate or modify the class in some fashion. This expression must evaluate to a function, which is executed by the runtime to apply the decoration."
+}, { url: annotation["tsDecoratorCodeAss"], keys: "typescript, ts, decorator, codeass", name:"Decorators in Typescript", desc: "Decorators adding really new good thing directly into Typescript. As proposal explains: Decorators annotate and modify classes and properties on design time. They are able to annotate class, property, method or its parameter."
 }, { url: ng2["ng2io"], keys: "angular2, ng2, home", name:"Angular2 - One framework. Mobile and desktop.", desc: "In Angular you display data by defining components. Data in your component classes is automatically available to display in your templates or control how they render as in the example below."
 }, { url: ng2["ve"], keys: "angular2, ng2, shadow, dom", name:"View Encapsulation in Angular 2", desc: "Angular2 shadow dom strategy."
 }, { url: ng2["styleng2"], keys: "angular2, ng2, style", name:"Styling Angular 2 components", desc: "Until now, we mostly talked about how to create simple components in Angular 2, like a zippy or a tabs component, and we also covered some isolated parts of the framework like the new dependency injection. In this article we are going to discuss another essential part when it comes to building components: Styling."
 }, { url: ng2["sd"], keys: "angular2, ng2, Shadow, Dom", name:"Shadow DOM 101", desc: "With Shadow DOM, elements can get a new kind of node associated with them. This new kind of node is called a shadow root. An element that has a shadow root associated with it is called a shadow host. The content of a shadow host isn’t rendered; the content of the shadow root is rendered instead."
 }, { url: ng2["ad"], keys: "angular2, ng2, annotations, decorators", name:"The difference between Annotations and Decorators", desc: "Last year, the Angular team announced it’s ECMAScript language extension AtScript, which adds types and annotations to the language in order to enable better tooling, debugging and overall development experience. Half a year later at ng-conf, the team announced that AtScript becomes TypeScript, which supports annotations and another feature called “decorators”."
-}, { url: ng2["jsdecorator"], keys: "angular2, ng2, javascript, decorators", name:"javascript-decorators", desc: "Decorators make it possible to annotate and modify classes and properties at design time. While ES5 object literals support arbitrary expressions in the value position, ES6 classes only support literal functions as values. Decorators restore the ability to run code at design time, while maintaining a declarative syntax."
+}, { url: ng2["di12"], keys: "angular2, ng2, di, dependency, injection", name:"DEPENDENCY INJECTION IN ANGULAR 1 AND ANGULAR 2", desc: "In this article I will show how common scenarios of using dependency injection in Angular 1 can be implemented in Angular 2."
+}, { url: ng2["gitter"], keys: "angular2, ng2, live, talking", name:"Discussion for Angular2 only - GITTER", desc: "live talking on Angular2"
 }, { url: ng2["di"], keys: "angular2, ng2, di, dependency, injection", name:"Dependency Injection in Angular 2", desc: "Dependency injection has always been one of Angular’s biggest features and selling points. It allows us to inject dependencies in different components across our applications, without needing to know, how those dependencies are created, or what dependencies they need themselves. However, it turns out that the current dependency injection system in Angular 1 has some problems that need to be solved in Angular 2, in order to build the next generation framework. In this article, we’re going to explore the new dependency injection system for future generations."
 }, { url: urls["fontclock"], keys: "font, icon, ligature", name:"Timepiece Rounded", desc: "An Opentype Font displaying Time as an analogue Clock"
 }, { url: urls["fontforge"], keys: "font, icon, ligature", name:"FontForge Open Source Font Editor", desc: "FontForge is free and open-source outline font editor."
