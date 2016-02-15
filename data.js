@@ -24,8 +24,10 @@ var urls = {
   "npmtaobao1": "http://riny.net/2014/cnpm/",
   "taobaonpm": "http://npm.taobao.org/",
   "codyhouse": "https://codyhouse.co/",
-  "diplove": "http://dpi.lv/"
-}
+  "diplove": "http://dpi.lv/",
+  "eventloop": "http://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html",
+  "loupe": "http://latentflip.com/loupe/?code=Cgp2YXIgeCA9IGZ1bmN0aW9uIHgoYSl7CiAgICByZXR1cm4gYTsKfQoKZnVuY3Rpb24geShiKXsKICAgIHJldHVybiB4KGIpOwp9CgpmdW5jdGlvbiB6KCl7CiAgICBmb3IgKGkgPSAwOyBpIDwgMTA7IGkrKyl7CiAgICAgICAgc2V0VGltZW91dChmdW5jdGlvbigpe2NvbnNvbGUubG9nKHkoaSkpfSwgMTAwMCk7CiAgICB9Cn0KCnooKTs%3D!!!",
+};
 
 var github = {
   "leftstick": {
@@ -229,6 +231,8 @@ var data = [
 }, { url: ecmascript["6tech2015"], keys: "web, six, 6, technology, 2015, electron, rollup, react, native, vs, code", name:"Looking back on 2015: six exciting web technologies", desc: "In 2015, there was an amazing amount of innovation related to the web platform. The following sections describe six technologies that I find exciting: Electron, React Native, Progressive web apps, Visual studio code, Rollup, Web Assembly."
 }, { url: ecmascript["es6modules"], keys: "es6, export, import, modules, tutorial, material, js", name:"ECMAScript 6 modules: the final syntax", desc: "At the end of July 2014, TC39 [1] had another meeting, during which the last details of the ECMAScript 6 (ES6) module syntax were finalized. This blog post gives an overview of the complete ES6 module system."
 }, { url: urls["diplove"], keys: "ppi, dpi, dppx, pixel, per, inch", name:"DPI love - Easily find the DPI/PPI of any screen", desc: "DPI love - Easily find the DPI/PPI of any screen"
+}, { url: urls["eventloop"], keys: "js, javascript, eventloop, stack, callback, queue", name:"Philip Roberts: What the heck is the event loop anyway?", desc: "JavaScript programmers like to use words like, “event-loop”, “non-blocking”, “callback”, “asynchronous”, “single-threaded” and “concurrency”. We say things like “don’t block the event loop”, “make sure your code runs at 60 frames-per-second”, “well of course, it won’t work, that function is an asynchronous callback!”"
+}, { url: urls["loupe"], keys: "loupe, js, javascript, eventloop, stack, callback, queue", name:"Loupe", desc: "Loupe is a little visualisation to help you understand how JavaScript's call stack/event loop/callback queue interact with each other. The best thing to do to understand how this works is watch this video, then when you are ready, go play!"
 }, { url: functionalProgramming["scareFP"], keys: "functional, programming, fp", name:"Don’t Be Scared Of Functional Programming", desc: "Functional programming is the mustachioed hipster of programming paradigms. Originally relegated to the annals of computer science academia, functional programming has had a recent renaissance that is due largely to its utility in distributed systems (and probably also because “pure” functional languages like Haskell are difficult to grasp, which gives them a certain cachet)."
 }, { url: functionalProgramming["fpBasics"], keys: "functional, programming, fp", name: "Functional Programming Basics", desc:"Confused about functional programming? “Uncle Bob” Martin strips the paradigm down to its essentials, and explains why you can and must understand functional programming now."
 }, { url: d3["D3Tutorials"], keys: "d3, functional, programming, fp", name: "Interactive Data Visualization for the Web - An Introduction to Designing with D3", desc:"These tutorials evolved out of my own process of learning how to use D3. You already know that D3 is an extraordinary tool for mapping data within web pages, written by Mike Bostock. Many people, including myself, come to D3 with backgrounds in design, mapping, and data visualization, but not programming and computer science."
