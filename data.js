@@ -56,7 +56,8 @@ var google = {
   "googlematerialicons": {
     "home": "https://design.google.com/icons/",
     "ghpage": "https://google.github.io/material-design-icons/"
-  }
+  },
+  "jsStyleGuild": "https://google.github.io/styleguide/javascriptguide.xml",
 };
 
 var mac = {
@@ -110,7 +111,8 @@ var ecmascript = {
 var reactiveProgramming = {
   "rp": "https://gist.github.com/staltz/868e7e9bc2a7b8c1f754",
   "rerxjs": "https://github.com/Reactive-Extensions/RxJS",
-  "rxjs": "https://github.com/ReactiveX/RxJS"
+  "rxjs": "https://github.com/ReactiveX/RxJS",
+  "elm": "http://elm-lang.org/",
 };
 
 var functionalProgramming = {
@@ -184,6 +186,7 @@ var data = [
 }, { url: urls["fontforge"], keys: "font, icon, ligature", name:"FontForge Open Source Font Editor", desc: "FontForge is free and open-source outline font editor."
 }, { url: google.googlematerialicons.home, keys: "font, icon, ligature", name:"Material icons - Google Design", desc: "Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects."
 }, { url: google.googlematerialicons.ghpage, keys: "font, icon, ligature", name:"Material icons guide - Google design", desc: "Material design system icons are simple, modern, friendly, and sometimes quirky. Each icon is created using our design guidelines to depict in simple and minimal forms the universal concepts used commonly throughout a UI. Ensuring readability and clarity at both large and small sizes, these icons have been optimized for beautiful display on all common platforms and display resolutions."
+}, { url: google.jsStyleGuild, keys: "js, javascript, coding, code, standards, style, guild", name:"Google JavaScript Style Guide", desc: "JavaScript is the main client-side scripting language used by many of Google's open-source projects. This style guide is a list of dos and don'ts for JavaScript programs."
 }, { url: urls["designwithfontforge"], keys: "font, icon, ligature", name:"Design With FontForge", desc: "A Book About How To Create New Typefaces Using FontForge"
 }, { url: urls["prismjs"], keys: "highlight, syntax, code, pre, prism", name:"prism", desc: "Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind. It’s a spin-off from Dabblet and is tested there daily by thousands."
 }, { url: urls["highlightjs"], keys: "highlight, syntax, code, pre", name:"highlight.js", desc: "Syntax highlighting for the Web"
@@ -215,6 +218,7 @@ var data = [
 }, { url: reactiveProgramming.rp, keys: "reactive, programing, rp, frp, rx", name:"The introduction to Reactive Programming you've been missing", desc: "The introduction to Reactive Programming you've been missing"
 }, { url: reactiveProgramming.rerxjs, keys: "reactive, programing, rp, frp, rx", name:"Reactive-Extensions/RxJS: The Reactive Extensions for JavaScript", desc: "RxJS - The Reactive Extensions for JavaScript"
 }, { url: reactiveProgramming.rxjs, keys: "reactive, programing, rp, frp, rx", name:"ReactiveX/RxJS", desc: "Reactive Extensions Library for JavaScript. This is a rewrite of Reactive-Extensions/RxJS and is intended to supersede it once this is ready. This rewrite is meant to have better performance, better modularity, better debuggable call stacks, while staying mostly backwards compatible, with some breaking changes that reduce the API surface."
+}, { url: reactiveProgramming.elm, keys: "reactive, programing, rp, frp, rx, elm", name:"elm - the best of functional programming in your browser", desc: "Getting started with Elm is now easier than ever with the StartApp package. With the Elm Architecture, it has never been easier to write modular front-end code that is shockingly fast and easy to test, refactor, and debug. The StartApp package drastically lowers the barrier to entry, setting everything up so you can focus entirely on writing your app."
 }, { url: onlineCoding.jsfiddle, keys: "coding, code, online, fiddle, javascript, editor, html, css", name:"Create a new fiddle - JSFiddle", desc: "Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor."
 }, { url: onlineCoding.es6fiddle, keys: "es6, coding, code, online, fiddle, javascript, editor, html, css", name:"ES6 Fiddle", desc: "ES6 Examples"
 }, { url: onlineCoding.plunker, keys: "plunker, coding, code, online, fiddle, javascript, editor, html, css", name:"Plunker - Helping developers make the web", desc: "Plunker is an online community for creating, collaborating on and sharing your web development ideas."
