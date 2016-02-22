@@ -88,7 +88,9 @@ npm --registry https://registry.npm.taobao.org install express\n\
 npm config set registry https://registry.npm.taobao.org\n\
 // loglevel\n\
 npm config set loglevel=http\
-"
+",
+  ng2DiTs: "ng2-di-ts",
+  ng2DiJs: "ng2-di-js",
 };
 
 var onlineCoding = {
@@ -133,7 +135,9 @@ var ng2 = {
   ad: "http://blog.thoughtram.io/angular/2015/05/03/the-difference-between-annotations-and-decorators.html",
   di: "http://blog.thoughtram.io/angular/2015/05/18/dependency-injection-in-angular-2.html",
   di12: "http://victorsavkin.com/post/126514197956/dependency-injection-in-angular-1-and-angular-2",
-  gitter: "https://gitter.im/angular/angular"
+  gitter: "https://gitter.im/angular/angular",
+  di01: "https://angular.io/docs/ts/latest/guide/dependency-injection.html",
+  di02: "https://angular.io/docs/ts/latest/guide/hierarchical-dependency-injection.html",
 };
 
 var fe = {
@@ -182,6 +186,8 @@ var data = [
 }, { url: ng2["di12"], keys: "angular2, ng2, di, dependency, injection", name:"DEPENDENCY INJECTION IN ANGULAR 1 AND ANGULAR 2", desc: "In this article I will show how common scenarios of using dependency injection in Angular 1 can be implemented in Angular 2."
 }, { url: ng2["gitter"], keys: "angular2, ng2, live, talking", name:"Discussion for Angular2 only - GITTER", desc: "live talking on Angular2"
 }, { url: ng2["di"], keys: "angular2, ng2, di, dependency, injection", name:"Dependency Injection in Angular 2", desc: "Dependency injection has always been one of Angular’s biggest features and selling points. It allows us to inject dependencies in different components across our applications, without needing to know, how those dependencies are created, or what dependencies they need themselves. However, it turns out that the current dependency injection system in Angular 1 has some problems that need to be solved in Angular 2, in order to build the next generation framework. In this article, we’re going to explore the new dependency injection system for future generations."
+}, { url: ng2["di01"], keys: "angular2, ng2, di, dependency, injection", name:"DEPENDENCY INJECTION", desc: "Dependency Injection is an important application design pattern. Angular has its own dependency injection framework and we really can't build an Angular application without it. It's used so widely that almost everyone just calls it \"DI\"."
+}, { url: ng2["di02"], keys: "angular2, ng2, di, dependency, injection", name:"HIERARCHICAL INJECTORS", desc: "Angular has an Hierarchical Dependency Injection system. There is actually a tree of injectors that parallel an application's component tree. We can re-configure the injectors at any level of that component tree with interesting and useful results."
 }, { url: urls["fontclock"], keys: "font, icon, ligature", name:"Timepiece Rounded", desc: "An Opentype Font displaying Time as an analogue Clock"
 }, { url: urls["fontforge"], keys: "font, icon, ligature", name:"FontForge Open Source Font Editor", desc: "FontForge is free and open-source outline font editor."
 }, { url: google.googlematerialicons.home, keys: "font, icon, ligature", name:"Material icons - Google Design", desc: "Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects."
@@ -212,6 +218,8 @@ var data = [
 }, { url: mac["sublshortcut"], keys: "sublime, subl, shortcut, mac", name:"Sublime Keyboard Shortcuts - OSX", desc: "Sublime Keyboard Shortcuts for OSX"
 }, { url: mac["hosts"], keys: "mac, hosts, start", name:"How to edit your hosts file on a mac", desc: "Like many Unix-based and Unix-like operating systems, it is possible to change the hosts file on your Mac to manually set a domain to a certain server."
 }, { code: codes.taobaonpm, codeId: 'taobaonpm', keys: "npm, taobao, mirror, code", name:"淘宝 NPM 镜像"
+}, { code: codes.ng2DiTs, codeId: 'ng2-di-ts', keys: "angular2, ng2, di, code", name:"angular2 di ts"
+}, { code: codes.ng2DiJs, codeId: 'ng2-di-js', keys: "angular2, ng2, di, code", name:"angular2 di js"
 }, { url: urls["npmtaobao1"], keys: "npm, taobao, mirror", name:"国内优秀npm镜像推荐及使用 - Bubblings Blog", desc: "npm全称Node Package Manager，是node.js的模块依赖管理工具。由于npm的源在国外，所以国内用户使用起来各种不方便。下面整理出了一部分国内优秀的npm镜像资源，国内用户可以选择使用。", code: ""
 }, { url: urls["taobaonpm"], keys: "npm, taobao, mirror", name:"淘宝 NPM 镜像", desc: "这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。"
 }, { url: urls["codyhouse"], keys: "html, css, js", name:"CodyHouse - Free HTML, CSS, JS nuggets", desc: "A free library of HTML/CSS/Javascript resources to boost your web projects and learn new tricks."
