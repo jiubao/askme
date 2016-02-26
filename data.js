@@ -27,6 +27,8 @@ var urls = {
   "diplove": "http://dpi.lv/",
   "eventloop": "http://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html",
   "loupe": "http://latentflip.com/loupe/?code=Cgp2YXIgeCA9IGZ1bmN0aW9uIHgoYSl7CiAgICByZXR1cm4gYTsKfQoKZnVuY3Rpb24geShiKXsKICAgIHJldHVybiB4KGIpOwp9CgpmdW5jdGlvbiB6KCl7CiAgICBmb3IgKGkgPSAwOyBpIDwgMTA7IGkrKyl7CiAgICAgICAgc2V0VGltZW91dChmdW5jdGlvbigpe2NvbnNvbGUubG9nKHkoaSkpfSwgMTAwMCk7CiAgICB9Cn0KCnooKTs%3D!!!",
+  "debounce": "https://css-tricks.com/the-difference-between-throttling-and-debouncing/",
+  "requestAnimationFrame": "http://www.html5rocks.com/en/tutorials/speed/animations/",
 };
 
 var github = {
@@ -43,7 +45,10 @@ var github = {
     "masterMarkdown": "https://guides.github.com/features/mastering-markdown/",
     "writingInGithub": "https://help.github.com/articles/writing-on-github/",
     "flavoredMarkdown": "https://help.github.com/articles/github-flavored-markdown/",
-    "forkRepo": "https://help.github.com/articles/fork-a-repo/"
+    "forkRepo": "https://help.github.com/articles/fork-a-repo/",
+    "developer": "https://developer.github.com/",
+    "ghUsers": "https://developer.github.com/v3/users/#get-all-users",
+    "gist": "https://gist.github.com/",
   },
   "angular": {
     "gh": "https://github.com/angular/angular.js",
@@ -200,11 +205,16 @@ var data = [
 }, { url: urls["aframe"], keys: "vr, 3d, virtual, reality", name:"A-Frame Building Blocks for the VR Web", desc: "Use markup to create VR experiences that work across desktop, iPhones, and the Oculus Rift."
 }, { url: urls["kangax.jsquiz"], keys: "quiz", name:"Javascript quiz - Perfection Kills", desc: "Javascript rants and findings, by kangax"
 }, { url: urls["kangax.es6quiz"], keys: "quiz", name:"Javascript quiz. ES6 edition. - Perfection Kills", desc: "Javascript rants and findings, by kangax"
+}, { url: urls["debounce"], keys: "debounce, throttle", name:"The Difference Between Throttling and Debouncing", desc: "Throttling enforces a maximum number of times a function can be called over time. As in \"execute this function at most once every 100 milliseconds.\" Debouncing enforces that a function not be called again until a certain amount of time has passed without it being called. As in \"execute this function only if 100 milliseconds have passed without it being called.\""
+}, { url: urls["requestAnimationFrame"], keys: "debounce, throttle, animation, frame", name:"Leaner, Meaner, Faster Animations with requestAnimationFrame", desc: "It’s a fair bet you’ve done some animation work in your time as a developer, whether that’s smaller UI effects or large iteractive canvas pieces. Chances are you’ve also come across requestAnimationFrame, or rAF (we say it raff around these parts), and hopefully you’ve had a chance to use it in your projects. In case you don’t know, requestAnimationFrame is the browser’s native way of handling your animations. Because rAF is specifically designed to deal with animation and rendering, the browser can schedule it at the most appropriate time and, if we play our cards right, it will help us get a buttery smooth 60 frames per second."
 }, { url: github.tj.ejs, keys: "template", name:"EJS - Embedded JavaScript templates", desc: "Embedded JavaScript templates for node"
 }, { url: github.gh.masterMarkdown, keys: "markdown, master, github", name:"Mastering Markdown - GitHub Guides", desc: "Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like # or *."
 }, { url: github.gh.writingInGithub, keys: "markdown, write, writing, github", name:"Writing on GitHub", desc: "Issues, comments, and pull request descriptions are written using GitHub Flavored Markdown along with some additional features to make writing content on GitHub easy."
 }, { url: github.gh.flavoredMarkdown, keys: "markdown, flavored, github", name:"GitHub Flavored Markdown", desc: "GitHub uses \"GitHub Flavored Markdown,\" or GFM, across the site--in issues, comments, and pull requests. It differs from standard Markdown (SM) in a few significant ways, and adds some additional functionality."
 }, { url: github.gh.forkRepo, keys: "fork, github", name:"Fork A Repo", desc: "A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project."
+}, { url: github.gh.developer, keys: "developer, github, gh", name:"GitHub Developer", desc: "Leverage the power of GitHub in your app. Get started with one of our guides, or jump straight into the API documentation."
+}, { url: github.gh.ghUsers, keys: "developer, users, github, gh", name:"GitHub Developer Users", desc: "Github API for getting users"
+}, { url: github.gh.gist, keys: "gist, github, gh", name:"GitHub Gist", desc: "Github gist"
 }, { url: urls["markdown"], keys: "markdown", name:"Daring Fireball: Markdown", desc: "Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML)."
 }, { url: urls["markdownOnline"], keys: "markdown, online", name:"Daring Fireball: Markdown Web Dingus", desc: "Markdown online"
 }, { url: urls["ci"], keys: "continuous, integration, ci", name:"Travis CI - Test and Deploy Your Code with Confidence", desc: "Easily sync your GitHub projects with Travis CI and you'll be testing your code in minutes!"
