@@ -120,6 +120,7 @@ var reactiveProgramming = {
   "rerxjs": "https://github.com/Reactive-Extensions/RxJS",
   "rxjs": "https://github.com/ReactiveX/RxJS",
   "elm": "http://elm-lang.org/",
+  "hotcold": "http://www.introtorx.com/content/v1.0.10621.0/14_HotAndColdObservables.html",
 };
 
 var functionalProgramming = {
@@ -237,6 +238,7 @@ var data = [
 }, { url: reactiveProgramming.rerxjs, keys: "reactive, programing, rp, frp, rx", name:"Reactive-Extensions/RxJS: The Reactive Extensions for JavaScript", desc: "RxJS - The Reactive Extensions for JavaScript"
 }, { url: reactiveProgramming.rxjs, keys: "reactive, programing, rp, frp, rx", name:"ReactiveX/RxJS", desc: "Reactive Extensions Library for JavaScript. This is a rewrite of Reactive-Extensions/RxJS and is intended to supersede it once this is ready. This rewrite is meant to have better performance, better modularity, better debuggable call stacks, while staying mostly backwards compatible, with some breaking changes that reduce the API surface."
 }, { url: reactiveProgramming.elm, keys: "reactive, programing, rp, frp, rx, elm", name:"elm - the best of functional programming in your browser", desc: "Getting started with Elm is now easier than ever with the StartApp package. With the Elm Architecture, it has never been easier to write modular front-end code that is shockingly fast and easy to test, refactor, and debug. The StartApp package drastically lowers the barrier to entry, setting everything up so you can focus entirely on writing your app."
+}, { url: reactiveProgramming.hotcold, keys: "reactive, programing, rp, frp, rx, hot, cold", name:"Intro to Rx - Hot and Cold observables", desc: "In this chapter, we will look at how to describe and handle two styles of observable sequences: 1. Sequences that are passive and start producing notifications on request (when subscribed to), 2. Sequences that are active and produce notifications regardless of subscriptions."
 }, { url: onlineCoding.jsfiddle, keys: "coding, code, online, fiddle, javascript, editor, html, css", name:"Create a new fiddle - JSFiddle", desc: "Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor."
 }, { url: onlineCoding.es6fiddle, keys: "es6, coding, code, online, fiddle, javascript, editor, html, css", name:"ES6 Fiddle", desc: "ES6 Examples"
 }, { url: onlineCoding.plunker, keys: "plunker, coding, code, online, fiddle, javascript, editor, html, css", name:"Plunker - Helping developers make the web", desc: "Plunker is an online community for creating, collaborating on and sharing your web development ideas."
