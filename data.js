@@ -31,6 +31,14 @@ var urls = {
   "requestAnimationFrame": "http://www.html5rocks.com/en/tutorials/speed/animations/",
 };
 
+var h5 = {
+  photoswipe: 'http://photoswipe.com/',
+  html2canvas: 'https://html2canvas.hertzen.com/',
+  fastclick: 'https://github.com/ftlabs/fastclick',
+  vconsole: 'https://github.com/WechatFE/vConsole',
+  resizeimg: 'https://github.com/think2011/localResizeIMG'
+};
+
 var github = {
   "leftstick": {
     "home": "",
@@ -268,6 +276,13 @@ var data = [
 //}, { url: fe.shadowdomVisualizer, keys: "shadow, dom, spec", name: "Shadow DOM 301 - Advanced Concepts & DOM APIs", desc:"This article discusses more of the amazing things you can do with Shadow DOM! It builds on the concepts discussed in Shadow DOM 101 and Shadow DOM 201."
 }, { url: fe.customElements, keys: "custom, elements, web, component, shadow, dom, template", name: "Custom Elements", desc:"Custom Elements allow web developers to define new types of HTML elements. The spec is one of several new API primitives landing under the Web Components umbrella, but it's quite possibly the most important. Web Components don't exist without the features unlocked by custom elements:"
 }, { url: fe.styleElements, keys: "style, elemnet, shadow, dom", name: "A Guide to Styling Elements", desc:"This article covers many of the new CSS rules, properties, and concepts for styling Custom Elements. While much of it is applicable to general Web Components, it specifically focuses on: 1. How to use these new CSS features with Polymer. 2. How Polymer’s polyfills shim certain behaviors."
+
+// h5
+}, { url: h5.photoswipe, keys: "h5, photo, swipe", name: "PhotoSwipe", desc:"JavaScript gallery, no dependencies."
+}, { url: h5.html2canvas, keys: "h5, screenshot, canvas", name: "html2canvas", desc:'This script allows you to take "screenshots" of webpages or parts of it, directly on the users browser. The screenshot is based on the DOM and as such may not be 100% accurate to the real representation as it does not make an actual screenshot, but builds the screenshot based on the information available on the page.'
+}, { url: h5.fastclick, keys: "h5, touch, click", name: "fastclick", desc:'Polyfill to remove click delays on browsers with touch UIs'
+}, { url: h5.vconsole, keys: "h5, debug, console", name: "vConsole", desc:'A lightweight, extendable front-end developer tool for mobile web page.'
+}, { url: h5.resizeimg, keys: "h5, img, image, resize, compress", name: "localResizeIMG", desc:'前端本地客户端压缩图片，兼容IOS，Android，PC、自动按需加载文件'
 }];
 
 
